@@ -49,13 +49,30 @@
 		</article>
 		<aside class="pull-right">
 			<div class="box" data-title="<%- i18n('side_print') %>">
-				<a href=""><%- i18n('print_pedigree') %></a>
-				<a href=""><%- i18n('print_family') %></a>
-				<a href=""><%- i18n('print_family_sources') %></a>
-				<a href=""><%- i18n('print_fanchart') %></a>
+				<a href="" class="fs-icon-tree"><%- i18n('print_pedigree') %></a>
+				<a href="" class="fs-icon-FGR"><%- i18n('print_family') %></a>
+				<a href="" class="fs-icon-FGR"><%- i18n('print_family_sources') %></a>
+				<a href="" class="fs-icon-fan"><%- i18n('print_fanchart') %></a>
 			</div>
 			<div class="box" data-title="<%- i18n('side_research') %>">
-				<a href=""><%- i18n('research_search') %></a>
+				<a href="" class="fs-icon-search"><%- i18n('research_search') %></a>
+			</div>
+			<div class="box" data-title="<%- i18n('side_changes') %>">
+				<ul class="unstyled change-log">
+					<li class="fs-icon-change" ng-repeat="change in person.changes">
+						<p>test</p>
+						<label>{{change.timeStampDisplay}}</label>
+						<label>
+							<%- i18n('change_by') %>
+							<a href="">{{change.contributor.name}}</a>
+						</label>
+					</li>
+				</ul>
+			</div>
+			<div class="box" data-title="<%- i18n('side_tools') %>">
+				<a href="" class="fs-icon-duplicates"><%- i18n('tools_duplicates') %></a>
+				<a href="" class="fs-icon-report"><%- i18n('tools_abuse') %></a>
+				<a href="" class="fs-icon-trash"><%- i18n('tools_delete') %></a>
 			</div>
 		</aside>
 	</section>

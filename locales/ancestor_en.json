@@ -13,9 +13,13 @@
 	"print_family_sources": "Family Sources",
 	"print_fanchart": "Fan Chart",
 	"research_search": "Search Records",
+	"tools_duplicates": "Possible Duplicates",
+	"tools_abuse": "Report Abuse",
+	"tools_delete": "Dlete Person",
 	"section_vital": "Vital Information",
 	"section_nonvital": "Other Information",
 	"section_family": "Family Members",
 	"section_family_spouses": "Spouses and Children",
-	"section_family_parents": "Parents and Siblings"
+	"section_family_parents": "Parents and Siblings",
+	"change_by": "by "
 }
