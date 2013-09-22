@@ -1,0 +1,23 @@
+{
+	"section_open": "Open",
+	"section_close": "Close",
+	"conclusion_NAME": "Name",
+	"conclusion_GENDER": "Gender",
+	"conclusion_BIRTH": "Birth",
+	"conclusion_CHRISTENING": "Christening",
+	"conclusion_DEATH": "Death",
+	"conclusion_BURIAL": "Burial",
+	"conclusion_ALTERNATE_NAME": "Alternate Name",
+	"conclusion_OTHER_EVENT": "Custom Event",
+	"conclusion_ALT_AKA": "Also Known As",
+	"conclusion_ALT_BIRTH": "Birth Name",
+	"conclusion_addLink": "Add",
+	"conclusion_reason": "Reason This Information Is Correct",
+	"conclusion_modified": "Modified",
+	"conclusion_history": "History",
+	"conclusion_by": " by ",
+	"family_children": "Children",
+	"family_preferred": "Preferred",
+	"family_edit_couple": "Edit Couple",
+	"family_married": "Married"
+}

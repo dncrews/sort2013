@@ -1,0 +1,64 @@
+<% page = { title : 'Sort Ancestor Presentation', key: 'sort_ancestor' } %>
+<% assets = { css : ['ng-ancestor.css','ng-common.css','fs-icon-svg.css'], js: ['angular-1.0.3.js','ng-common.js','ng-ancestor.js'] } %>
+
+<div id="main" ng-app="treeApp" class="ancestor-view" ng-controller="ancestorController" ng-class="{loading:loading}">
+	<header class="info clearfix">
+		<div ng-class="{img:true,'has-photo':!!person.photoUrl}" style="{{photoUrlCss()}}" data-gender="{{person.gender|lowercase}}"></div>
+		<div class="details">
+			<h3 class="serif">{{person.name}}</h3>
+			<h5 class="clearfix">
+				<div class="pull-left" ng-bind="person.fullLifeSpan|html"></div>
+				<div class="pull-left" ng-bind="person.id"></div>
+			</h5>
+			<div class="clearfix detail-actions">
+				<a href="" class="fs-icon-tree" data-action="tree"><%- i18n('person_tree') %></a>
+				<a href="" class="fs-icon-watch-off" data-action="watch"><%- i18n('person_watch') %></a>
+			</div>
+		</div>
+		<nav class="section-tabs">
+			<a href="" data-section="details" class="active"><span><%- i18n('nav_details') %></span></a>
+			<a href="" data-section="photos"><span><%- i18n('nav_photos') %></span></a>
+			<a href="" data-section="stories"><span><%- i18n('nav_stories') %></span></a>
+		</nav>
+	</header>
+	<section data-section-id="details" class="clearfix">
+		<article class="pull-left">
+			<div class="content">
+				<section fs-rounded-section data-title="<%- i18n('section_vital') %>">
+					<div fs-conclusion data-conclusion="person.nameConclusion" data-type="NAME"></div>
+					<div fs-conclusion data-conclusion="person.genderConclusion" data-type="GENDER"></div>
+					<div fs-conclusion data-conclusion="person.birthConclusion" data-type="BIRTH"></div>
+					<div fs-conclusion data-conclusion="person.christeningConclusion" data-type="CHRISTENING"></div>
+					<div fs-conclusion data-conclusion="person.deathConclusion" data-type="DEATH"></div>
+					<div fs-conclusion data-conclusion="person.burialConclusion" data-type="BURIAL"></div>
+				</section>
+				<section fs-rounded-section data-title="<%- i18n('section_nonvital') %>">
+					<div fs-conclusion data-conclusion="conclusion" data-type="{{conclusion.type}}" ng-repeat="conclusion in person.otherConclusions"></div>
+				</section>
+				<section fs-rounded-section data-title="<%- i18n('section_family') %>">
+					<div class="family-column family-spouses" data-count="{{person.families.spouses.length}}">
+						<h4><%- i18n('section_family_spouses') %></h4>
+						<div fs-family-members data-family="family" ng-repeat="family in person.families.spouses"></div>
+					</div>
+					<div class="family-column family-parents" data-count="{{person.families.parents.length}}">
+						<h4><%- i18n('section_family_parents') %></h4>
+						<div fs-family-members data-family="family" ng-repeat="family in person.families.parents"></div>
+					</div>
+				</section>
+			</div>
+		</article>
+		<aside class="pull-right">
+			<div class="box" data-title="<%- i18n('side_print') %>">
+				<a href=""><%- i18n('print_pedigree') %></a>
+				<a href=""><%- i18n('print_family') %></a>
+				<a href=""><%- i18n('print_family_sources') %></a>
+				<a href=""><%- i18n('print_fanchart') %></a>
+			</div>
+			<div class="box" data-title="<%- i18n('side_research') %>">
+				<a href=""><%- i18n('research_search') %></a>
+			</div>
+		</aside>
+	</section>
+	<section data-section-id="photos" class="hide"></section>
+	<section data-section-id="stories" class="hide"></section>
+</div>

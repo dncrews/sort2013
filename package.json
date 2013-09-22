@@ -1,0 +1,23 @@
+{
+  "name": "sort2013",
+  "version": "0.0.0",
+  "description": "Ancestor page presentation for sort",
+  "main": "app.js",
+  "dependencies": {
+    "shared-ui": "git+https://github.com/fs-webdev/shared-ui.git",
+    "frontier-build-tools": "git+https://github.com/fs-webdev/frontier-build-tools.git",
+    "woodruff": "git+https://github.com/fs-webdev/woodruff.git",
+    "startup": "~0.1.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markgardner/sort2013.git"
+  },
+  "author": "Mark Gardner",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "0cdd19c8e37d81196d308a205e83b71cf5ade2b3"
+}

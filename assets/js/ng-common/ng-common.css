@@ -1,0 +1,33 @@
+a, a:hover, a:active {
+	color: #0051c4;
+}
+
+.section-rounded {
+	width: 820px;
+	background: #fff;
+	border: 1px solid #CACACA;
+	margin: 15px 0 0 15px;
+	border-radius: 12px;
+	position: relative;
+	color: #333331;
+}
+
+.section-rounded > h4 {
+	font-size: 20px;
+	line-height: 24px;
+	margin: 10px;
+}
+
+.section-rounded > .section-toggle {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #333331;
+}
+
+.section-rounded .section-content {
+	padding: 10px;
+	margin-top: -10px;
+}

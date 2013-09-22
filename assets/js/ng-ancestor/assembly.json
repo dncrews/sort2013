@@ -1,0 +1,9 @@
+{
+	"files": [
+		"app.js",
+		"controllers/ancestor.js",
+		"services/personService.js",
+		"directives/conclusion.js",
+		"directives/familymembers.js"
+	]
+}

@@ -1,0 +1,6 @@
+{
+	"files": [
+		"app.js",
+		"directives/roundedSection.js"
+	]
+}

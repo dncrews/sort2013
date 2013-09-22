@@ -1,0 +1,1388 @@
+{
+	"id":"KWJZ-H23",
+	"lifeSpanDates":"",
+	"isDeleted":false,
+	"name":"Charles Coulson Rich",
+	"gender":"MALE",
+	"lifeSpan":"1809-1883",
+	"isLiving":false,
+	"photoUrl": "url(https://familysearch.org/patron/v2/TH-301-40348-499-6/thumb200s.jpg?ctx=ArtCtxPublic)",
+	"nameConclusion":{
+		"id":"V.777-777L",
+		"justification":"",
+		"contributor":{
+			"id":"MMV7-RB6",
+			"name":"Tyler Daines",
+			"date":"10 October 2010",
+			"timestamp":"2010-10-10T23:37:38+00:00"
+		},
+		"details":{
+			"detailsType":"NameDetails",
+			"style":"EUROTYPIC",
+			"nameType":"BIRTH",
+			"fullText":"Charles Coulson Rich",
+			"preferredName":true,
+			"nameForms":[
+				{
+					"fullText":"Charles Coulson Rich",
+					"prefixPart":null,
+					"suffixPart":null,
+					"familyPart":"Rich",
+					"givenPart":"Charles Coulson",
+					"script":"UNSPECIFIED"
+				}
+			],
+			"detailsType":"NameDetails"
+		},
+		"type":"NAME",
+		"multiValued":false
+	},
+	"genderConclusion":{
+		"id":"V.777-7774",
+		"justification":"",
+		"contributor":{
+			"id":"MMWP-VYD",
+			"name":"dmandersen4498022",
+			"date":"28 January 2012",
+			"timestamp":"2012-01-28T19:58:12+00:00"
+		},
+		"details":{
+			"detailsType":"GenderDetails",
+			"gender":"MALE",
+			"detailsType":"GenderDetails"
+		},
+		"type":"GENDER",
+		"multiValued":false
+	},
+	"birthConclusion":{
+		"id":"V.777-777P",
+		"justification":"standardizing place",
+		"contributor":{
+			"id":"MM7T-WWQ",
+			"name":"Lee Merritt",
+			"date":"27 June 2013",
+			"timestamp":"2013-06-27T17:52:58+00:00"
+		},
+		"details":{
+			"detailsType":"EventDetails",
+			"type":"BIRTH",
+			"date":{
+				"normalizedText":"21 August 1809",
+				"julianDateRange":{
+					"earliestDay":2382016,
+					"latestDay":2382016
+				},
+				"originalText":"21 August 1809",
+				"localizedText":"21 August 1809",
+				"modifier":null
+			},
+			"place":{
+				"normalizedText":"Big Bone, Boone, Kentucky, United States",
+				"originalText":"Big Bone, Boone, Kentucky, United States",
+				"localizedText":"Big Bone, Boone, Kentucky, United States",
+				"geoCode":null
+			},
+			"title":null,
+			"description":null,
+			"deceasedFlag":null,
+			"detailsType":"EventDetails"
+		},
+		"type":"BIRTH",
+		"multiValued":false
+	},
+	"christeningConclusion":null,
+	"deathConclusion":{
+		"id":"V.777-7771",
+		"justification":"Standardized place",
+		"contributor":{
+			"id":"MM66-26Q",
+			"name":"Jill Rich Burgoyne",
+			"date":"21 July 2013",
+			"timestamp":"2013-07-22T00:01:15+00:00"
+		},
+		"details":{
+			"detailsType":"EventDetails",
+			"type":"DEATH",
+			"date":{
+				"normalizedText":"17 November 1883",
+				"julianDateRange":{
+					"earliestDay":2409132,
+					"latestDay":2409132
+				},
+				"originalText":"17 November 1883",
+				"localizedText":"17 November 1883",
+				"modifier":null
+			},
+			"place":{
+				"normalizedText":"Paris, Bear Lake, Idaho, United States",
+				"originalText":"Paris, Bear Lake, Idaho, United States",
+				"localizedText":"Paris, Bear Lake, Idaho, United States",
+				"geoCode":null
+			},
+			"title":null,
+			"description":null,
+			"deceasedFlag":null,
+			"detailsType":"EventDetails"
+		},
+		"type":"DEATH",
+		"multiValued":false
+	},
+	"burialConclusion":{
+		"id":"V.777-777H",
+		"justification":"Added Place",
+		"contributor":{
+			"id":"MM66-26Q",
+			"name":"Jill Rich Burgoyne",
+			"date":"21 July 2013",
+			"timestamp":"2013-07-22T00:02:46+00:00"
+		},
+		"details":{
+			"detailsType":"EventDetails",
+			"type":"BURIAL",
+			"date":{
+				"normalizedText":"20 November 1883",
+				"julianDateRange":{
+					"earliestDay":2409135,
+					"latestDay":2409135
+				},
+				"originalText":"20 November 1883",
+				"localizedText":"20 November 1883",
+				"modifier":null
+			},
+			"place":{
+				"normalizedText":"Paris, Bear Lake, Idaho, United States",
+				"originalText":"Paris, Bear Lake, Idaho, United States",
+				"localizedText":"Paris, Bear Lake, Idaho, United States",
+				"geoCode":null
+			},
+			"title":null,
+			"description":null,
+			"deceasedFlag":null,
+			"detailsType":"EventDetails"
+		},
+		"type":"BURIAL",
+		"multiValued":false
+	},
+	"fullLifeSpan":"21 August 1809 &amp;ndash; 17 November 1883",
+	"skeleton":false,
+	"otherConclusions":[
+		{
+			"id":"N.777-777K",
+			"justification":"",
+			"contributor":{
+				"id":"MM36-5Q1",
+				"name":"bw/denkers/1802749",
+				"date":"22 May 2012",
+				"timestamp":"2012-05-22T16:33:04+00:00"
+			},
+			"details":{
+				"detailsType":"NameDetails",
+				"style":"EUROTYPIC",
+				"nameType":"BIRTH",
+				"fullText":"Charles Coulson Rich",
+				"preferredName":false,
+				"nameForms":[
+					{
+						"fullText":"Charles Coulson Rich",
+						"prefixPart":null,
+						"suffixPart":null,
+						"familyPart":"Rich",
+						"givenPart":"Charles Coulson",
+						"script":"UNSPECIFIED"
+					}
+				],
+				"detailsType":"NameDetails"
+			},
+			"type":"ALTERNATE_NAME",
+			"multiValued":true
+		},
+		{
+			"id":"N.777-777J",
+			"justification":"",
+			"contributor":{
+				"id":"MM66-26Q",
+				"name":"Jill Rich Burgoyne",
+				"date":"15 May 2013",
+				"timestamp":"2013-05-15T23:54:48+00:00"
+			},
+			"details":{
+				"detailsType":"NameDetails",
+				"style":"EUROTYPIC",
+				"nameType":"AKA",
+				"fullText":"Apostle Charles C. Rich",
+				"preferredName":false,
+				"nameForms":[
+					{
+						"fullText":"Apostle Charles C. Rich",
+						"prefixPart":"Apostle",
+						"suffixPart":null,
+						"familyPart":"Rich",
+						"givenPart":"Charles C.",
+						"script":"ROMAN"
+					}
+				],
+				"detailsType":"NameDetails"
+			},
+			"type":"ALTERNATE_NAME",
+			"multiValued":true
+		},
+		{
+			"id":"N.777-77PN",
+			"justification":"",
+			"contributor":{
+				"id":"MM66-26Q",
+				"name":"Jill Rich Burgoyne",
+				"date":"15 May 2013",
+				"timestamp":"2013-05-15T23:55:31+00:00"
+			},
+			"details":{
+				"detailsType":"NameDetails",
+				"style":"EUROTYPIC",
+				"nameType":"AKA",
+				"fullText":"Charles C. Rich",
+				"preferredName":false,
+				"nameForms":[
+					{
+						"fullText":"Charles C. Rich",
+						"prefixPart":null,
+						"suffixPart":null,
+						"familyPart":"Rich",
+						"givenPart":"Charles C.",
+						"script":"ROMAN"
+					}
+				],
+				"detailsType":"NameDetails"
+			},
+			"type":"ALTERNATE_NAME",
+			"multiValued":true
+		},
+		{
+			"id":"N.777-777G",
+			"justification":"",
+			"contributor":{
+				"id":"MM62-1F7",
+				"name":"AllenJRobison",
+				"date":"28 January 2012",
+				"timestamp":"2012-01-28T19:58:12+00:00"
+			},
+			"details":{
+				"detailsType":"EventDetails",
+				"type":"OTHER_EVENT",
+				"date":null,
+				"place":null,
+				"title":"AFN",
+				"description":"184T-TQ",
+				"deceasedFlag":null,
+				"detailsType":"EventDetails"
+			},
+			"type":"OTHER_EVENT",
+			"multiValued":true
+		},
+		{
+			"id":"N.777-7776",
+			"justification":"",
+			"contributor":{
+				"id":"MMQJ-XWQ",
+				"name":"hgpoynor2711784",
+				"date":"28 January 2012",
+				"timestamp":"2012-01-28T19:58:12+00:00"
+			},
+			"details":{
+				"detailsType":"EventDetails",
+				"type":"OTHER_EVENT",
+				"date":{
+					"normalizedText":"1880",
+					"julianDateRange":{
+						"earliestDay":2407716,
+						"latestDay":2408081
+					},
+					"originalText":"1880",
+					"localizedText":"1880",
+					"modifier":null
+				},
+				"place":{
+					"normalizedText":"Paris, Bear Lake, Idaho, United States",
+					"originalText":"Paris, Bear Lake, Idaho",
+					"localizedText":"Paris, Bear Lake, Idaho, United States",
+					"geoCode":null
+				},
+				"title":"census",
+				"description":null,
+				"deceasedFlag":null,
+				"detailsType":"EventDetails"
+			},
+			"type":"OTHER_EVENT",
+			"multiValued":true
+		}
+	],
+	"living":false,
+	"families": {
+		"parents":[
+			{
+				"husband":{
+					"id":"KWJG-7H1",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Joseph Rich",
+					"gender":"Male",
+					"lifeSpan":"1786-1866",
+					"isLiving":false,
+					"principlePerson":false,
+					"living":false
+				},
+				"wife":{
+					"id":"KWJG-7HB",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Nancy O'Neal",
+					"gender":"Female",
+					"lifeSpan":"1782-1847",
+					"isLiving":false,
+					"principlePerson":false,
+					"living":false
+				},
+				"current":true,
+				"relationshipId":"MD69-3RY",
+				"coupleId":"KWJG-7H1_KWJG-7HB",
+				"event":{
+					"originalPlace":"Boone,,Kentucky",
+					"standardPlace":"Boone, Rockcastle, Kentucky, United States",
+					"originalDate":"23 JUN 1808",
+					"standardDate":"23 June 1808",
+					"type":"MARRIAGE"
+				},
+				"children":[
+					{
+						"id":"KWJZ-H23",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Charles Coulson Rich",
+						"gender":"Male",
+						"lifeSpan":"1809-1883",
+						"isLiving":false,
+						"principlePerson":true,
+						"relationshipId":"MF8J-8Z6",
+						"living":false
+					},
+					{
+						"id":"KWVP-CNY",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Artimesia Rich",
+						"gender":"Female",
+						"lifeSpan":"1811-1880",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M8KQ-9FL",
+						"living":false
+					},
+					{
+						"id":"KWJR-JBP",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Jane Ann Rich",
+						"gender":"Female",
+						"lifeSpan":"1813-1885",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDNW-52M",
+						"living":false
+					},
+					{
+						"id":"LZ1C-6Y2",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Minerva Rich",
+						"gender":"Female",
+						"lifeSpan":"1816-1840",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MN25-S6Q",
+						"living":false
+					},
+					{
+						"id":"L4BF-PF8",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Nancy RICH",
+						"gender":"Female",
+						"lifeSpan":"1821-1851",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MXR8-CKV",
+						"living":false
+					}
+				]
+			}
+		],
+		"spouses":[
+			{
+				"husband":{
+					"id":"KWJZ-H23",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Charles Coulson Rich",
+					"gender":"Male",
+					"lifeSpan":"1809-1883",
+					"isLiving":false,
+					"principlePerson":true,
+					"living":false
+				},
+				"wife":{
+					"id":"LHNN-1NS",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Sarah DeArmon Pea",
+					"gender":"Female",
+					"lifeSpan":"1814-1893",
+					"isLiving":false,
+					"principlePerson":false,
+					"living":false
+				},
+				"current":false,
+				"relationshipId":"MDNV-F3C",
+				"coupleId":"KWJZ-H23_LHNN-1NS",
+				"event":{
+					"originalPlace":"Far West, Caldwell, Missouri, United States",
+					"standardPlace":"Far West, Caldwell, Missouri, United States",
+					"originalDate":"11 February 1838",
+					"standardDate":"11 February 1838",
+					"type":"MARRIAGE"
+				},
+				"children":[
+					{
+						"id":"KWVH-8JJ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Sarah Jane Rich",
+						"gender":"Female",
+						"lifeSpan":"1839-1926",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M7NL-XT2",
+						"living":false
+					},
+					{
+						"id":"KWNT-PX5",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Joseph Coulson RICH",
+						"gender":"Male",
+						"lifeSpan":"1841-1908",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MFTB-2TY",
+						"living":false
+					},
+					{
+						"id":"KND8-R7X",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Artimissia Messeniah RICH",
+						"gender":"Female",
+						"lifeSpan":"1843-1843",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDQV-CTL",
+						"living":false
+					},
+					{
+						"id":"KVPR-8FJ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Charles Coulson Rich II",
+						"gender":"Male",
+						"lifeSpan":"1844-1890",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M8XL-PWM",
+						"living":false
+					},
+					{
+						"id":"KWNJ-17L",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"John Thomas Rich",
+						"gender":"Male",
+						"lifeSpan":"1846-1893",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDQV-ZCD",
+						"living":false
+					},
+					{
+						"id":"KWJX-3XJ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Elizabeth Rich",
+						"gender":"Female",
+						"lifeSpan":"1849-1932",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MF3N-89G",
+						"living":false
+					},
+					{
+						"id":"KWZR-BZX",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Benjamin Erastus Rich",
+						"gender":"Male",
+						"lifeSpan":"1855-1913",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MVJN-JHL",
+						"living":false
+					},
+					{
+						"id":"K2MW-YYH",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"David Patten Rich",
+						"gender":"Male",
+						"lifeSpan":"1853-1930",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDQV-Z66",
+						"living":false
+					},
+					{
+						"id":"KWCK-C36",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Frederick Carmel Rich",
+						"gender":"Male",
+						"lifeSpan":"1859-1941",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDQV-C16",
+						"living":false
+					}
+				]
+			},
+			{
+				"husband":{
+					"id":"KWJZ-H23",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Charles Coulson Rich",
+					"gender":"Male",
+					"lifeSpan":"1809-1883",
+					"isLiving":false,
+					"principlePerson":true,
+					"living":false
+				},
+				"wife":{
+					"id":"KWJZ-HL5",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Mary Ann Phelps",
+					"gender":"Female",
+					"lifeSpan":"1829-1912",
+					"isLiving":false,
+					"principlePerson":false,
+					"living":false
+				},
+				"current":true,
+				"relationshipId":"M8DX-Q25",
+				"coupleId":"KWJZ-H23_KWJZ-HL5",
+				"event":{
+					"originalPlace":"Nauvoo, Hancock, Illinois, United States",
+					"standardPlace":"Nauvoo, Hancock, Illinois, United States",
+					"originalDate":"6 January 1845",
+					"standardDate":"6 January 1845",
+					"type":"MARRIAGE"
+				},
+				"children":[
+					{
+						"id":"KWVP-S14",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Laura Esphena Rich",
+						"gender":"Female",
+						"lifeSpan":"1848-1849",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDNW-GKL",
+						"living":false
+					},
+					{
+						"id":"KWVP-STJ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Mary Ann Rich",
+						"gender":"Female",
+						"lifeSpan":"1850-1935",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDNW-GRQ",
+						"living":false
+					},
+					{
+						"id":"KWVP-SBL",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Morris Marion Rich",
+						"gender":"Male",
+						"lifeSpan":"1854-1855",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M8K3-1CW",
+						"living":false
+					},
+					{
+						"id":"KW87-TNJ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Minerva Marion Rich",
+						"gender":"Female",
+						"lifeSpan":"1854-1939",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDNW-LJT",
+						"living":false
+					},
+					{
+						"id":"KWZH-GDS",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Amasa Mason Rich",
+						"gender":"Male",
+						"lifeSpan":"1856-1919",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M8K3-1XK",
+						"living":false
+					},
+					{
+						"id":"KWVP-S1S",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Pauline Phelps Rich",
+						"gender":"Female",
+						"lifeSpan":"1859-1860",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M8K3-1VC",
+						"living":false
+					},
+					{
+						"id":"KWJH-KKN",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Ezra Clark Rich",
+						"gender":"Male",
+						"lifeSpan":"1864-1948",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MZNM-GR4",
+						"living":false
+					},
+					{
+						"id":"KWCP-6B4",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Edward I. Rich ",
+						"gender":"Male",
+						"lifeSpan":"1868-1969",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDNW-PS1",
+						"living":false
+					},
+					{
+						"id":"KWVP-STP",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Jacob Phelps Rich",
+						"gender":"Male",
+						"lifeSpan":"1874-1874",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M8K3-15G",
+						"living":false
+					},
+					{
+						"id":"KWCD-YQ2",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"William Lyman Rich",
+						"gender":"Male",
+						"lifeSpan":"1852-1928",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M62R-MHM",
+						"living":false
+					}
+				]
+			},
+			{
+				"husband":{
+					"id":"KWJZ-H23",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Charles Coulson Rich",
+					"gender":"Male",
+					"lifeSpan":"1809-1883",
+					"isLiving":false,
+					"principlePerson":true,
+					"living":false
+				},
+				"wife":{
+					"id":"KWJG-7CM",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Eliza Ann Graves",
+					"gender":"Female",
+					"lifeSpan":"1811-1879",
+					"isLiving":false,
+					"principlePerson":false,
+					"living":false
+				},
+				"current":false,
+				"relationshipId":"M8R2-WSP",
+				"coupleId":"KWJZ-H23_KWJG-7CM",
+				"event":{
+					"originalPlace":"Nauvoo, Hancock, Illinois, United States",
+					"standardPlace":"Nauvoo, Hancock, Illinois, United States",
+					"originalDate":"6 January 1845",
+					"standardDate":"6 January 1845",
+					"type":"MARRIAGE"
+				},
+				"children":[
+					{
+						"id":"KVPG-ZP6",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Mary Bratton Rich",
+						"gender":"Female",
+						"lifeSpan":"1846-1931",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MXWF-2MW",
+						"living":false
+					},
+					{
+						"id":"KWVZ-F4G",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Eliza Ann Rich",
+						"gender":"Female",
+						"lifeSpan":"1848-1849",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M8K3-BGK",
+						"living":false
+					},
+					{
+						"id":"K27Y-NRZ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Frances Phoebe Rich",
+						"gender":"Female",
+						"lifeSpan":"1850-1932",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MXXL-XJ4",
+						"living":false
+					}
+				]
+			},
+			{
+				"husband":{
+					"id":"KWJZ-H23",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Charles Coulson Rich",
+					"gender":"Male",
+					"lifeSpan":"1809-1883",
+					"isLiving":false,
+					"principlePerson":true,
+					"living":false
+				},
+				"wife":{
+					"id":"KWJZ-6L3",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Sarah Jane Peck",
+					"gender":"Female",
+					"lifeSpan":"1825-1893",
+					"isLiving":false,
+					"principlePerson":false,
+					"living":false
+				},
+				"current":false,
+				"relationshipId":"MDNV-F36",
+				"coupleId":"KWJZ-H23_KWJZ-6L3",
+				"event":{
+					"originalPlace":"",
+					"standardPlace":"",
+					"originalDate":"15 January 1846",
+					"standardDate":"15 January 1846",
+					"type":"MARRIAGE"
+				},
+				"children":[
+					{
+						"id":"KWZW-RRH",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Hyrum Smith Rich",
+						"gender":"Male",
+						"lifeSpan":"1846-1924",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MX5T-GTY",
+						"living":false
+					},
+					{
+						"id":"KWVP-CNM",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Henrietta Rich",
+						"gender":"Female",
+						"lifeSpan":"1849-1853",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MVFH-KFL",
+						"living":false
+					},
+					{
+						"id":"KWVP-CNK",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Orson Rich",
+						"gender":"Male",
+						"lifeSpan":"1851-1852",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MX5T-GL4",
+						"living":false
+					},
+					{
+						"id":"KWVP-CNQ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Orissa Rich",
+						"gender":"Female",
+						"lifeSpan":"1851-1854",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MXF3-JPR",
+						"living":false
+					},
+					{
+						"id":"K2HZ-8D8",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Samantha Rich",
+						"gender":"Female",
+						"lifeSpan":"1853-1866",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MXF3-L6R",
+						"living":false
+					},
+					{
+						"id":"KW8J-PLG",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Henry Benjamin Rich",
+						"gender":"Male",
+						"lifeSpan":"1855-1893",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MFJH-NHD",
+						"living":false
+					},
+					{
+						"id":"KWVP-CNH",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Lorenzo Ether Rich",
+						"gender":"Male",
+						"lifeSpan":"1858-1893",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDQF-PWY",
+						"living":false
+					},
+					{
+						"id":"KWVP-CNJ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Pheobe Jane Rich",
+						"gender":"Female",
+						"lifeSpan":"1860-1879",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MXXG-HVK",
+						"living":false
+					},
+					{
+						"id":"KWVP-CND",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Julia Ann Rich",
+						"gender":"Female",
+						"lifeSpan":"1863-1865",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MX3H-J9R",
+						"living":false
+					},
+					{
+						"id":"K2MH-7D6",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Wilford Woodruff Rich",
+						"gender":"Male",
+						"lifeSpan":"1866-1940",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MXF3-L31",
+						"living":false
+					},
+					{
+						"id":"KWZS-5Z8",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Walter Peck Rich",
+						"gender":"Male",
+						"lifeSpan":"1869-1943",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MF9W-17C",
+						"living":false
+					}
+				]
+			},
+			{
+				"husband":{
+					"id":"KWJZ-H23",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Charles Coulson Rich",
+					"gender":"Male",
+					"lifeSpan":"1809-1883",
+					"isLiving":false,
+					"principlePerson":true,
+					"living":false
+				},
+				"wife":{
+					"id":"KWJ6-311",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Emeline Grover",
+					"gender":"Female",
+					"lifeSpan":"1831-1917",
+					"isLiving":false,
+					"principlePerson":false,
+					"living":false
+				},
+				"current":false,
+				"relationshipId":"MDNV-FMV",
+				"coupleId":"KWJZ-H23_KWJ6-311",
+				"event":{
+					"originalPlace":"Nauvoo, Hancock, Illinois, United States",
+					"standardPlace":"Nauvoo, Hancock, Illinois, United States",
+					"originalDate":"2 February 1846",
+					"standardDate":"2 February 1846",
+					"type":"MARRIAGE"
+				},
+				"children":[
+					{
+						"id":"KWJG-78V",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Thomas Grover Rich",
+						"gender":"Male",
+						"lifeSpan":"1849-1878",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MN42-PLP",
+						"living":false
+					},
+					{
+						"id":"KWNL-SKP",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Caroline Whiting Rich",
+						"gender":"Female",
+						"lifeSpan":"1852-1936",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MN45-79X",
+						"living":false
+					},
+					{
+						"id":"KWNB-19V",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Nancy Emmeline Rich",
+						"gender":"Female",
+						"lifeSpan":"1854-1939",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MN43-J68",
+						"living":false
+					},
+					{
+						"id":"KVP5-1HM",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Landon Jedediah Rich",
+						"gender":"Male",
+						"lifeSpan":"1858-1921",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MN4M-GFL",
+						"living":false
+					},
+					{
+						"id":"KV59-M4C",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Samuel Joseph Rich",
+						"gender":"Male",
+						"lifeSpan":"1860-1916",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MN48-G6D",
+						"living":false
+					},
+					{
+						"id":"KWZ9-626",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Heber Charles Chase Rich",
+						"gender":"Male",
+						"lifeSpan":"1863-1932",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MN4C-PBQ",
+						"living":false
+					},
+					{
+						"id":"KWDL-RWP",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Joel Hezekiah Rich",
+						"gender":"Male",
+						"lifeSpan":"1865-1945",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MN4X-VPY",
+						"living":false
+					},
+					{
+						"id":"KWCX-BJX",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"George Quayle Rich",
+						"gender":"Male",
+						"lifeSpan":"1868-1935",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MN4D-DDM",
+						"living":false
+					}
+				]
+			},
+			{
+				"husband":{
+					"id":"KWJZ-H23",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Charles Coulson Rich",
+					"gender":"Male",
+					"lifeSpan":"1809-1883",
+					"isLiving":false,
+					"principlePerson":true,
+					"living":false
+				},
+				"wife":{
+					"id":"KWJZ-H2Q",
+					"lifeSpanDates":"",
+					"isDeleted":false,
+					"name":"Harriett Sargent",
+					"gender":"Female",
+					"lifeSpan":"1832-1915",
+					"isLiving":false,
+					"principlePerson":false,
+					"living":false
+				},
+				"current":false,
+				"relationshipId":"MDNJ-P17",
+				"coupleId":"KWJZ-H23_KWJZ-H2Q",
+				"event":{
+					"originalPlace":"Winter Quarters, Douglas, Nebraska Territory, United States",
+					"standardPlace":"Winter Quarters, Douglas, Nebraska Territory, United States",
+					"originalDate":"28 March 1847",
+					"standardDate":"28 March 1847",
+					"type":"MARRIAGE"
+				},
+				"children":[
+					{
+						"id":"K2HZ-ZJR",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Franklin David Rich",
+						"gender":"Male",
+						"lifeSpan":"1849-1910",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MVP8-57D",
+						"living":false
+					},
+					{
+						"id":"K2MH-PK2",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Adelbert Coulson Rich",
+						"gender":"Male",
+						"lifeSpan":"1851-1918",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MVP8-6SW",
+						"living":false
+					},
+					{
+						"id":"KN8N-SBQ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Tunis Harriet Rich",
+						"gender":"Female",
+						"lifeSpan":"1855-1857",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M8KQ-MYY",
+						"living":false
+					},
+					{
+						"id":"KW8R-2CP",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Abel George Rich",
+						"gender":"Male",
+						"lifeSpan":"1857-1939",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MZ4X-4L6",
+						"living":false
+					},
+					{
+						"id":"KWJJ-1CN",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Martha Caroline Rich",
+						"gender":"Female",
+						"lifeSpan":"1859-1937",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MDXN-XNJ",
+						"living":false
+					},
+					{
+						"id":"K2HZ-ZPJ",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Harley Thomas Rich",
+						"gender":"Male",
+						"lifeSpan":"1863-1933",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"M8KQ-9S7",
+						"living":false
+					},
+					{
+						"id":"K2HZ-83L",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Luna Rosetta Rich",
+						"gender":"Female",
+						"lifeSpan":"1865-1891",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MVFH-Z1Z",
+						"living":false
+					},
+					{
+						"id":"KWCK-X95",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Morgan Jesse Rich",
+						"gender":"Male",
+						"lifeSpan":"1868-1951",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MC8C-3SZ",
+						"living":false
+					},
+					{
+						"id":"KW8R-TFW",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Alvin Orlando Rich",
+						"gender":"Male",
+						"lifeSpan":"1870-1944",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MZZ7-Q9Y",
+						"living":false
+					},
+					{
+						"id":"KWJZ-CW1",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Drucilla Sarah Rich",
+						"gender":"Female",
+						"lifeSpan":"1871-1952",
+						"isLiving":false,
+						"principlePerson":false,
+						"relationshipId":"MMD5-G3R",
+						"living":false
+					}
+				]
+			}
+		]
+	},
+	"changes": [
+		{
+			"id":"D2S6-WKS",
+			"parentId":null,
+			"parentChangeType":null,
+			"type":"ADD_COUPLE_EVENT",
+			"restorable":false,
+			"currentChange":true,
+			"deleted":false,
+			"conclusion":{
+				"id":"R.777-777B",
+				"justification":"",
+				"contributor":{
+					"id":"MM6M-GXX",
+					"name":"David L Johnson",
+					"date":"7 September 2013",
+					"timestamp":"2013-09-07T16:50:07+00:00"
+				},
+				"details":{
+					"detailsType":"CoupleConclusionDetails",
+					"relationshipId":"MDNV-F36",
+					"father":{
+						"id":"KWJZ-H23",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Charles Coulson Rich",
+						"gender":"MALE",
+						"lifeSpan":"1809-1883",
+						"isLiving":false,
+						"deleted":false,
+						"living":false
+					},
+					"mother":{
+						"id":"KWJZ-6L3",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Sarah Jane Peck",
+						"gender":"FEMALE",
+						"lifeSpan":"1825-1893",
+						"isLiving":false,
+						"deleted":false,
+						"living":false
+					},
+					"originalFather":{
+						"id":"KWJZ-H23",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Charles Coulson Rich",
+						"gender":"MALE",
+						"lifeSpan":"1809-1883",
+						"isLiving":false,
+						"deleted":false,
+						"living":false
+					},
+					"originalMother":{
+						"id":"KWJZ-6L3",
+						"lifeSpanDates":"",
+						"isDeleted":false,
+						"name":"Sarah Jane Peck",
+						"gender":"FEMALE",
+						"lifeSpan":"1825-1893",
+						"isLiving":false,
+						"deleted":false,
+						"living":false
+					},
+					"type":"MARRIAGE",
+					"date":{
+						"normalizedText":null,
+						"julianDateRange":null,
+						"originalText":"15 Jan 1846",
+						"localizedText":"",
+						"modifier":null
+					},
+					"place":{
+						"normalizedText":null,
+						"originalText":"Nauvoo, Hancock, Illinois, United States",
+						"localizedText":"",
+						"geoCode":null
+					},
+					"title":null,
+					"description":null,
+					"deceasedFlag":null,
+					"detailsType":"CoupleConclusionDetails"
+				},
+				"type":"MARRIAGE",
+				"multiValued":true
+			},
+			"parentConclusion":null,
+			"classification":"COUPLE",
+			"contributor":{
+				"id":"MM6M-GXX",
+				"name":"David L Johnson",
+				"date":null,
+				"timestamp":null
+			},
+			"timeStamp":1378572607088,
+			"timeStampDisplay":"7 September 2013"
+		},
+		{
+			"id":"DJL7-6HK",
+			"parentId":null,
+			"parentChangeType":null,
+			"type":"ADD_PERSON_SOURCE_REFERENCE",
+			"restorable":false,
+			"currentChange":true,
+			"deleted":false,
+			"conclusion":null,
+			"parentConclusion":null,
+			"classification":"PERSON",
+			"contributor":{
+				"id":"MM6S-D7S",
+				"name":"mckissickmichaeljohn2",
+				"date":null,
+				"timestamp":null
+			},
+			"timeStamp":1376952694694,
+			"timeStampDisplay":"19 August 2013"
+		},
+		{
+			"id":"DNLJ-8DR",
+			"parentId":null,
+			"parentChangeType":null,
+			"type":"EDIT_PERSON_SOURCE_REFERENCE_TAG",
+			"restorable":false,
+			"currentChange":true,
+			"deleted":false,
+			"conclusion":null,
+			"parentConclusion":null,
+			"classification":"PERSON",
+			"contributor":{
+				"id":"MMKZ-B2Z",
+				"name":"MMKZ-B2Z",
+				"date":null,
+				"timestamp":null
+			},
+			"timeStamp":1375914781018,
+			"timeStampDisplay":"7 August 2013"
+		}
+	]
+}
