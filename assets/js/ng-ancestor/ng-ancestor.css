@@ -1,3 +1,21 @@
+.ancestor-view {
+	position: relative;
+}
+
+.ancestor-view.loading:after {
+	display: block;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 120px;
+	content: attr(data-loading);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(255,255,255,.85);
+}
+
 .ancestor-view > section {
 	background: #ECEBEA;
 }

@@ -19,5 +19,8 @@
 	"family_children": "Children",
 	"family_preferred": "Preferred",
 	"family_edit_couple": "Edit Couple",
-	"family_married": "Married"
+	"family_married": "Married",
+	"change_type_ADD_COUPLE_EVENT": "Couple Event Added",
+	"change_type_ADD_PERSON_SOURCE_REFERENCE": "Source Attached",
+	"change_type_EDIT_PERSON_SOURCE_REFERENCE_TAG": "Source Tagged"
 }

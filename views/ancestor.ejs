@@ -1,9 +1,9 @@
 <% page = { title : 'Sort Ancestor Presentation', key: 'sort_ancestor' } %>
 <% assets = { css : ['ng-ancestor.css','ng-common.css','fs-icon-svg.css'], js: ['angular-1.0.3.js','ng-common.js','ng-ancestor.js'] } %>
 
-<div id="main" ng-app="treeApp" class="ancestor-view" ng-controller="ancestorController" ng-class="{loading:loading}">
+<div id="main" ng-app="treeApp" class="ancestor-view" ng-controller="ancestorController" ng-class="{loading:loading}" data-loading="<%- i18n('loading') %>">
 	<header class="info clearfix">
-		<div ng-class="{img:true,'has-photo':!!person.photoUrl}" style="{{photoUrlCss()}}" data-gender="{{person.gender|lowercase}}"></div>
+		<div class="img" ng-class="{'has-photo':!!person.photoUrl}" style="{{photoUrlCss()}}" data-gender="{{person.gender|lowercase}}"></div>
 		<div class="details">
 			<h3 class="serif">{{person.name}}</h3>
 			<h5 class="clearfix">
@@ -58,9 +58,9 @@
 				<a href="" class="fs-icon-search"><%- i18n('research_search') %></a>
 			</div>
 			<div class="box" data-title="<%- i18n('side_changes') %>">
-				<ul class="unstyled change-log">
+				<ul class="unstyled change-log" ng-controller="changelogController">
 					<li class="fs-icon-change" ng-repeat="change in person.changes">
-						<p>test</p>
+						<p>{{getTitle(change)}}</p>
 						<label>{{change.timeStampDisplay}}</label>
 						<label>
 							<%- i18n('change_by') %>

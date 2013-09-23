@@ -2,6 +2,7 @@
 	"files": [
 		"app.js",
 		"controllers/ancestor.js",
+		"controllers/changelog.js",
 		"services/personService.js",
 		"directives/conclusion.js",
 		"directives/familymembers.js"

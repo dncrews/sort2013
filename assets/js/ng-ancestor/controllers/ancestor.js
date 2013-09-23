@@ -14,7 +14,5 @@ treeApp.controller('ancestorController', ['$scope', 'personService', function($s
 	personService.getData(function(data) {
 		$scope.loading = false;
 		$scope.person = data;
-
-		console.log(data);
 	});
 }]);
