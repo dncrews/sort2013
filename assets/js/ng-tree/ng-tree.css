@@ -75,7 +75,8 @@ aside .box > a {
 	margin: 2px 3px;
 }
 
-.sub-nav li:hover a {
+.sub-nav li:hover a,
+.sub-nav li.active a {
 	background-color: #e1ecc3;
 	border-color: #e1ecc3;
 }

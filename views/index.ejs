@@ -2,7 +2,7 @@
 <% assets = { css : ['ng-ancestor.css','ng-tree.css','fs-icon-svg.css'], js: ['angular-1.0.3.js','ng-ancestor.js','ng-tree.js'] } %>
 <div id="main" ng-app="tree" class="{{pagename}}-view">
 	<ul class="unstyled sub-nav clearfix" ng-controller="subnavController">
-		<li ng-repeat="page in pages" ng-class="{'has-goto':page.hasHistory}">
+		<li ng-repeat="page in pages" ng-class="{'has-goto':page.hasHistory, active: isActive(page)}">
 			<a href="" ng-click="navigate(page)" class="nav {{page.icon}}">{{page.text}}</a>
 			<a href="" ng-show="page.hasHistory" class="goto-trigger"></a>
 		</li>
