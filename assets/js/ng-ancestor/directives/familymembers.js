@@ -1,4 +1,4 @@
-treeApp.directive('fsFamilyMembers', function() {
+ancestorApp.directive('fsFamilyMembers', function() {
 	return {
 		replace: true,
 		scope: {

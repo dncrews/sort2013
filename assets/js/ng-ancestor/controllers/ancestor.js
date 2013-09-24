@@ -1,4 +1,4 @@
-treeApp.controller('ancestorController', ['$scope', 'personService', function($scope, personService) {
+ancestorApp.controller('ancestorController', ['$scope', 'personService', function($scope, personService) {
 	$scope.loading = true;
 
 	$scope.photoUrlCss = function() {

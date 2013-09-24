@@ -5,12 +5,14 @@ var woodruff = require('woodruff'),
 
 var app = module.exports = woodruff(__dirname, shared);
 
-app.get(/\/ancestor(.*)/, function(req, res) {
-	if(req.url === '/ancestor') {
-		res.render('ancestor');
-	} else {
-		res.end('test');
-	}
+app.get('/', function(req, res) {
+	res.render('index');
+});
+
+app.get('/views/:view', function(req, res) {
+	res.render(req.params.view, {
+		layout: null
+	});
 });
 
 app.get('/data', function(req, res) {
@@ -18,8 +20,12 @@ app.get('/data', function(req, res) {
 		'Content-Type': 'application/json'
 	});
 
+	//setTimeout(function() {
+
 	var filePath = path.join(__dirname, 'data/charles_c_rich.json'),
 		file = fs.createReadStream(filePath);
 
 	file.pipe(res);
+
+	//}, 2000);
 });

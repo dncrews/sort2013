@@ -1,4 +1,4 @@
-commonApp.directive('fsRoundedSection', function() {
+treeApp.directive('fsRoundedSection', function() {
 	return {
 		transclude: true,
 		replace: true,

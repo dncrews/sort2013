@@ -1,4 +1,4 @@
-treeApp.directive('fsConclusion', function() {
+ancestorApp.directive('fsConclusion', function() {
 	function normalize(obj, append) {
 		var text;
 

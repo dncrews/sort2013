@@ -1,6 +1,6 @@
-var treeApp = angular.module('treeApp', ['commonApp']);
+var ancestorApp = angular.module('ancestor', []);
 
-treeApp.filter('html', function () {
+ancestorApp.filter('html', function () {
   return function (text) {
   	return FS.htmlDecode(FS.htmlDecode(text));
   }

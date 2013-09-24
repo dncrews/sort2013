@@ -1,7 +1,4 @@
-<% page = { title : 'Sort Ancestor Presentation', key: 'sort_ancestor' } %>
-<% assets = { css : ['ng-ancestor.css','ng-common.css','fs-icon-svg.css'], js: ['angular-1.0.3.js','ng-common.js','ng-ancestor.js'] } %>
-
-<div id="main" ng-app="treeApp" class="ancestor-view" ng-controller="ancestorController" ng-class="{loading:loading}" data-loading="<%- i18n('loading') %>">
+<div ng-class="{loading:loading}" data-loading="<%- i18n('loading') %>" class="ancestor-inner">
 	<header class="info clearfix">
 		<div class="img" ng-class="{'has-photo':!!person.photoUrl}" style="{{photoUrlCss()}}" data-gender="{{person.gender|lowercase}}"></div>
 		<div class="details">

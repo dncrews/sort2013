@@ -1,4 +1,4 @@
-treeApp.factory('personService', ['$http', function($http) {
+ancestorApp.factory('personService', ['$http', function($http) {
 	return {
 		getData: function(cb) {
 			$http.get('/data').success(function(data) {
