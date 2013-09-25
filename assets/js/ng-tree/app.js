@@ -24,14 +24,19 @@ treeApp.config(['$routeProvider', function($routeProvider) {
 
 treeApp.run(['$rootScope', function($rootScope) {
 	$rootScope.$on('$routeChangeSuccess', function(e, route) {
-		var current = route.$$route;
+		var current = route.$$route,
+			$wrapper;
 
 		if(current) {
 			$rootScope.pagename = current.page;
 
 			// Breaking angular rule of placing dom manipulation in a app but due
 			// to not having control over the layout.ejs we will have to place a small snippet here.
-			window.jQuery && $('#wrapper').attr('data-page', current.page).attr('data-page-type', current.pageType);
+			if(window.jQuery) {
+				$('body')
+					.attr('data-page', current.page)
+					.attr('data-page-type', current.pageType || 'normal');
+			}
 		}
 	});
 }]);

@@ -65,9 +65,11 @@ aside .box > a {
 	background: #fff;
 	border-bottom: 2px solid #ccc;
 	border-top: 2px solid #ccc;
-	margin: 0;
-	padding: 0 0 0 20px;
 	position: relative;
+}
+
+.sub-nav > ul {
+	margin: 0;
 }
 
 .sub-nav li {
@@ -100,6 +102,10 @@ aside .box > a {
 	background-color: #F1F8E3;
 }
 
+.sub-nav li:first-child {
+	margin-left: 20px;
+}
+
 .sub-nav .has-goto .nav {
 	border-radius: 5px 0 0 5px;
 }
@@ -129,4 +135,28 @@ aside .box > a {
 	border: 5px solid transparent;
 	border-top-color: #000;
 	margin: 11px 0 5px 0;
+}
+
+[data-page-type="full"] #wrapper {
+	width: auto;
+}
+
+[data-page-type="full"] .global-util-nav-container,
+[data-page-type="full"] .global-pri-nav-container,
+.sub-nav > ul {
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+[data-page-type="full"] footer {
+	display: none !important;
+}
+
+@media (min-width: 1200px) {
+	[data-page-type="full"] .global-util-nav-container,
+	[data-page-type="full"] .global-pri-nav-container,
+	.sub-nav > ul {
+		width: 1170px;
+	}
 }

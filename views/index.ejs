@@ -1,11 +1,13 @@
 <% page = { title : 'Sort Presentation', key: 'sort_tree' } %>
 <% assets = { css : ['ng-pedigree.css','ng-ancestor.css','ng-tree.css','fs-icon-svg.css'], js: ['angular-1.2.0.js','angular-1.2.0-route.js','angular-1.2.0-sanitize.js','ng-pedigree.js','ng-ancestor.js','ng-tree.js'] } %>
 <div id="main" ng-app="tree">
-	<ul class="unstyled sub-nav clearfix" ng-controller="subnavController">
-		<li ng-repeat="page in pages" ng-class="{'has-goto':page.hasHistory, active: isActive(page)}">
-			<a href="" ng-click="navigate(page)" class="nav {{page.icon}}">{{page.text}}</a>
-			<a href="" ng-click="showGoTo(page)" ng-show="page.hasHistory" class="goto-trigger"></a>
-		</li>
-	</ul>
+	<div class="sub-nav">
+		<ul class="unstyled clearfix" ng-controller="subnavController">
+			<li ng-repeat="page in pages" ng-class="{'has-goto':page.hasHistory, active: isActive(page)}">
+				<a href="" ng-click="navigate(page)" class="nav {{page.icon}}">{{page.text}}</a>
+				<a href="" ng-click="showGoTo(page)" ng-show="page.hasHistory" class="goto-trigger"></a>
+			</li>
+		</ul>
+	</div>
 	<div class="ng-view"></div>
 </div>
