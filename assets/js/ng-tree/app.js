@@ -1,22 +1,37 @@
-var treeApp = angular.module('tree', ['ancestor']);
+var treeApp = angular.module('tree', ['ngRoute', 'ancestor', 'pedigree']);
+
+treeApp.filter('html', function () {
+  return function (text) {
+  	return FS.htmlDecode(FS.htmlDecode(text));
+  }
+});
 
 treeApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
-		.when('/', {
+		.when('/tree/:personId?/:spouseId?', {
 			templateUrl: '/views/tree', 
-			controller: 'treeController',
-			page: 'tree'
+			controller: 'pedigreeController',
+			page: 'tree',
+			pageType: 'full'
 		})
-		.when('/ancestor/:pid', {
+		.when('/ancestor/:personId?/:spouseId?', {
 			templateUrl: '/views/ancestor', 
 			controller: 'ancestorController',
 			page: 'ancestor'
 		})
-		.otherwise({redirectTo: '/'});
+		.otherwise({redirectTo: '/tree'});
 }]);
 
 treeApp.run(['$rootScope', function($rootScope) {
 	$rootScope.$on('$routeChangeSuccess', function(e, route) {
-		$rootScope.pagename = route.$route.page;
+		var current = route.$$route;
+
+		if(current) {
+			$rootScope.pagename = current.page;
+
+			// Breaking angular rule of placing dom manipulation in a app but due
+			// to not having control over the layout.ejs we will have to place a small snippet here.
+			window.jQuery && $('#wrapper').attr('data-page', current.page).attr('data-page-type', current.pageType);
+		}
 	});
 }]);

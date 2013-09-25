@@ -1,0 +1,1 @@
+var pedigreeApp = angular.module('pedigree', []);

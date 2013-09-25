@@ -1,0 +1,7 @@
+{
+	"files": [
+		"app.js",
+		"controllers/pedigreeController.js"
+	],
+	"simpleWrap": true
+}

@@ -21,13 +21,13 @@
 	border-top: 1px solid #fff;
 }
 
-.ancestor-view header {
+[data-page="ancestor"] header {
 	background: #CDCDCD;
 	border-bottom: 1px solid #B7B7B7;
 	color: #333331;
 }
 
-.ancestor-view header .img {
+[data-page="ancestor"] header .img {
 	width: 124px;
 	height: 124px;
 	background: url(gender_large.png) scroll -248px 0;
@@ -35,45 +35,45 @@
 	margin: 20px 20px 0 20px;
 }
 
-.ancestor-view header .img[data-gender="male"] {
+[data-page="ancestor"] header .img[data-gender="male"] {
 	background-position: 0 0;
 }
 
-.ancestor-view header .img[data-gender="female"] {
+[data-page="ancestor"] header .img[data-gender="female"] {
 	background-position: -124px 0;
 }
 
-.ancestor-view header .img.has-photo {
+[data-page="ancestor"] header .img.has-photo {
 	background-position: 0 0;
 	background-size: 100%;
 	border-radius: 50%;
 }
 
-.ancestor-view header .details {
+[data-page="ancestor"] header .details {
 	margin-top: 30px;
 	float: left;
 }
 
-.ancestor-view header [ng-bind="person.id"]:before {
+[data-page="ancestor"] header [ng-bind="person.id"]:before {
 	content: "•";
 	display: inline-block;
 	font-size: 16px;
 	margin: 0 10px;
 }
 
-.ancestor-view header h3 {
+[data-page="ancestor"] header h3 {
 	margin: 0;
 	font-size: 28px;
 	line-height: 32px;
 }
 
-.ancestor-view header h5 {
+[data-page="ancestor"] header h5 {
 	font-size: 16px;
 	font-weight: normal;
 	margin: 0;
 }
 
-.ancestor-view header .detail-actions a {
+[data-page="ancestor"] header .detail-actions a {
 	display: inline-block;
 	color: #333331;
 	padding-left: 25px;
@@ -81,17 +81,17 @@
 	background-position: 0 2px;
 }
 
-.ancestor-view header .detail-actions a[data-action="watch"] {
+[data-page="ancestor"] header .detail-actions a[data-action="watch"] {
 	padding-left: 20px;
 }
 
-.ancestor-view header nav {
+[data-page="ancestor"] header nav {
 	clear: left;
 	height: 20px;
 	margin-left: 164px;
 }
 
-.ancestor-view header nav a {
+[data-page="ancestor"] header nav a {
 	display: inline-block;
 	border: 1px solid transparent;
 	border-bottom-width: 0;
@@ -100,7 +100,7 @@
 	height: 27px;
 }
 
-.ancestor-view header nav span {
+[data-page="ancestor"] header nav span {
 	display: inline-block;
 	border: 1px solid transparent;
 	border-bottom-width: 0;
@@ -108,16 +108,16 @@
 	padding: 2px 12px 3px;
 }
 
-.ancestor-view header nav a.active {
+[data-page="ancestor"] header nav a.active {
 	border-color: #B7B7B7;
 }
 
-.ancestor-view header nav a.active span {
+[data-page="ancestor"] header nav a.active span {
 	background: #ECEBEA;
 	border-color: #fff;
 }
 
-.ancestor-view article {
+[data-page="ancestor"] article {
 	padding-bottom: 15px;
 }
 
