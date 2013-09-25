@@ -1,4 +1,4 @@
-var treeApp = angular.module('tree', ['ngRoute', 'ancestor', 'pedigree']);
+var treeApp = angular.module('tree', ['ngRoute', 'ngSanitize', 'ancestor', 'pedigree']);
 
 treeApp.filter('html', function () {
   return function (text) {

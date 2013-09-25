@@ -21,7 +21,7 @@ ancestorApp.directive('fsConclusion', function() {
 		template: 
 '<div class="conclusion-row">\
 	<label>{{lang[\'conclusion_\' + type]}}</label>\
-	<a href="" ng-bind-html-unsafe="conclusionText()" class="conclusion-trigger"></a>\
+	<a href="" ng-bind-html="conclusionText()" class="conclusion-trigger"></a>\
 </div>\
 <div class="conclusion-row extended-only" ng-show="conclusion.justification">\
 	<label>{{lang.conclusion_reason}}</label>\
