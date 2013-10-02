@@ -9,5 +9,10 @@
 			</li>
 		</ul>
 	</div>
-	<div class="ng-view"></div>
+	<div ng-show="isActive({ name: 'tree' })" ng-controller="pedigreeController">
+		<%- partial('tree') %>
+	</div>
+	<div ng-show="isActive({ name: 'ancestor' })" ng-controller="ancestorController">
+		<%- partial('ancestor') %>
+	</div>
 </div>

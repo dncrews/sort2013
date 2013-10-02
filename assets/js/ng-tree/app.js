@@ -9,20 +9,24 @@ treeApp.filter('html', function () {
 treeApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 		.when('/tree/:personId?/:spouseId?', {
-			templateUrl: '/views/tree', 
-			controller: 'pedigreeController',
+			//templateUrl: '/views/tree', 
+			//controller: 'pedigreeController',
 			page: 'tree',
 			pageType: 'full'
 		})
 		.when('/ancestor/:personId?/:spouseId?', {
-			templateUrl: '/views/ancestor', 
-			controller: 'ancestorController',
+			//templateUrl: '/views/ancestor', 
+			//controller: 'ancestorController',
 			page: 'ancestor'
 		})
 		.otherwise({redirectTo: '/tree'});
 }]);
 
-treeApp.run(['$rootScope', function($rootScope) {
+treeApp.run(['$rootScope', '$route', function($rootScope, $route) {
+	$rootScope.isActive = function(page, test) {
+		return this.pagename === page.name;
+	}
+
 	$rootScope.$on('$routeChangeSuccess', function(e, route) {
 		var current = route.$$route,
 			$wrapper;

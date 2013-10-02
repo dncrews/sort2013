@@ -40,10 +40,6 @@ treeApp.controller('subnavController', ['$scope', '$location', '$routeParams', f
 		icon: 'fs-icon-tree'
 	}];
 
-	$scope.isActive = function(page) {
-		return this.pagename === page.name;
-	}
-
 	$scope.navigate = function(page) {
 		$location.path(page.getUrl());
 	}
