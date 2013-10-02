@@ -297,6 +297,11 @@
 	background-position: center 50%;
 }
 
+.family-box a.focused {
+	color: #000;
+	font-weight: bold;
+}
+
 .change-log,
 .change-log p,
 .change-log label {

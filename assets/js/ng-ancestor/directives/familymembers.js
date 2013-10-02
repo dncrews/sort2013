@@ -1,19 +1,16 @@
 ancestorApp.directive('fsFamilyMembers', function() {
 	return {
 		replace: true,
-		scope: {
-			family: '='
-		},
 		template: 
 '<div class="family-box">\
 	<ul class="couple-box unstyled">\
 		<li class="fs-icon-male person">\
-			<a href="">{{family.husband.name}}</a>\
+			<a href="" ng-class="{focused: person.id == family.husband.id}">{{family.husband.name}}</a>\
 			<label>{{family.husband.lifeSpan}} • {{family.husband.id}}</label>\
 		</li>\
 		<li class="fs-icon-female person">\
-			<a href="">{{family.wife.name}}</a>\
-			<label>{{family.husband.lifeSpan}} • {{family.husband.id}}</label>\
+			<a href="" ng-class="{focused: person.id == family.wife.id}">{{family.wife.name}}</a>\
+			<label>{{family.wife.lifeSpan}} • {{family.wife.id}}</label>\
 		</li>\
 		<li class="married person">\
 			<label>{{lang.family_married}}</label>\
@@ -31,7 +28,7 @@ ancestorApp.directive('fsFamilyMembers', function() {
 		<a href="javascript:void(0)" class="children-toggle" ng-click="family.showChildren = !family.showChildren">{{lang.family_children}} ({{family.children.length}})</a>\
 		<ul class="unstyled">\
 			<li ng-repeat="child in family.children" class="person fs-icon-{{child.gender|lowercase}}">\
-				<a href="">{{child.name}}</a>\
+				<a href="" ng-class="{focused: person.id == child.id}">{{child.name}}</a>\
 				<label>{{child.lifeSpan}} • {{child.id}}</label>\
 			</li>\
 		</ul>\
@@ -39,6 +36,28 @@ ancestorApp.directive('fsFamilyMembers', function() {
 </div>',
 		link: function(scope, element, attrs) {
 			scope.lang = lang;
+			scope.$watch('person.nameConclusion.details.fullText', function(newVal, OldVal, scope) {
+				var pid, family, children;
+
+				if(newVal !== OldVal) {
+					pid = scope.person.id;
+					family = scope.family;
+					children = family.children;
+
+					if(family.husband.id === pid) {
+						family.husband.name = newVal;
+					} else if(family.wife.id === pid) {
+						family.wife.name = newVal;
+					} else {
+						for(var i = 0; i < children.length; i++) {
+							if(children[i].id === pid) {
+								children[i].name = newVal;
+								break;
+							}
+						}
+					}
+				}
+			});
 		}
 	}
 });
