@@ -1,7 +1,9 @@
 {
 	"files": [
 		"app.js",
-		"controllers/pedigreeController.js"
+		"controllers/pedigreeController.js",
+		"directives/bowtie.js",
+		"services/pedigreeService.js"
 	],
 	"simpleWrap": true
 }

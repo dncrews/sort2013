@@ -20,12 +20,19 @@ app.get('/data', function(req, res) {
 		'Content-Type': 'application/json'
 	});
 
-	//setTimeout(function() {
-
 	var filePath = path.join(__dirname, 'data/charles_c_rich.json'),
 		file = fs.createReadStream(filePath);
 
 	file.pipe(res);
+});
 
-	//}, 2000);
+app.get('/data-pedigree', function(req, res) {
+	res.writeHead(200, {
+		'Content-Type': 'application/json'
+	});
+
+	var filePath = path.join(__dirname, 'data/pedigree.json'),
+		file = fs.createReadStream(filePath);
+
+	file.pipe(res);
 });
