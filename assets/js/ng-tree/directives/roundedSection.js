@@ -5,7 +5,7 @@ treeApp.directive('fsRoundedSection', function() {
 		scope: {
 			title: '@'
 		},
-		template: '<section class="section-rounded clearfix"><a href="" class="section-toggle">{{toggle}}</a><h4 class="serif">{{title}}</h4><div class="section-content" ng-transclude></div></section>',
+		templateUrl: 'partials/roundedsection',
 		link: function(scope, element, attrs) {
 			scope.toggle = lang.section_close;
 

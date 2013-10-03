@@ -18,20 +18,7 @@ ancestorApp.directive('fsConclusion', function() {
 			conclusion: '=',
 			type: '@'
 		},
-		template: 
-'<div class="conclusion-row">\
-	<label>{{lang[\'conclusion_\' + type]}}</label>\
-	<a href="" ng-bind-html="conclusionText()" class="conclusion-trigger"></a>\
-</div>\
-<div class="conclusion-row extended-only" ng-show="conclusion.justification">\
-	<label>{{lang.conclusion_reason}}</label>\
-	<div>{{conclusion.justification}}</div>\
-</div>\
-<div class="conclusion-row extended-only">\
-	<label>{{lang.conclusion_modified}} | <a href="">{{lang.conclusion_history}}</a></label>\
-	<div>{{conclusion.contributor.date + lang.conclusion_by}}</div>\
-</div>\
-<a href="" class="add-link fs-icon-add" ng-show="!conclusion">{{lang.conclusion_addLink}}</a>',
+		templateUrl: 'partials/conclusion',
 		link: function(scope, element, attrs) {
 			scope.lang = lang;
 

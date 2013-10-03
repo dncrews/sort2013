@@ -1,0 +1,23 @@
+<div class="family-box">
+	<ul class="couple-box unstyled">
+		<li fs-person data-person="family.husband" data-root="person"></li>
+		<li fs-person data-person="family.wife" data-root="person"></li>
+		<li class="married person">
+			<label><%- i18n('married') %></label>
+			<label>{{family.event.standardDate||family.event.originalDate}}</label>
+			<label>{{family.event.standardPlace||family.event.originalPlace}}</label>
+		</li>
+		<li class="preferred clearfix">
+			<label class="checkbox pull-left">
+				<input type="checkbox" ng-model="family.current"> <%- i18n('preferred') %>
+			</label>
+			<a href="" class="pull-right"><%- i18n('edit_couple') %></a>
+		</li>
+	</ul>
+	<div class="children-list" ng-init="family.showChildren = family.current" ng-class="{expanded:family.showChildren}">
+		<a href="javascript:void(0)" class="children-toggle" ng-click="family.showChildren = !family.showChildren"><%- i18n('children') %> ({{family.children.length}})</a>
+		<ul class="unstyled">
+			<li fs-person data-person="child" data-root="person" ng-repeat="child in family.children" ></li>
+		</ul>
+	</div>
+</div>

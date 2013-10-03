@@ -15,6 +15,12 @@ app.get('/views/:view', function(req, res) {
 	});
 });
 
+app.get('/partials/:view', function(req, res) {
+	res.render('partials/' + req.params.view, {
+		layout: null
+	});
+});
+
 app.get('/data', function(req, res) {
 	res.writeHead(200, {
 		'Content-Type': 'application/json'

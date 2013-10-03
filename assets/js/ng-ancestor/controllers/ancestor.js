@@ -16,6 +16,7 @@ ancestorApp.controller('ancestorController', ['$rootScope', '$scope', 'personSer
 		$rootScope.person = data;
 	});
 
+	// Simple modify function for showing bindings.
 	window.doNameChange = function(name) {
 		var date = new Date();
 

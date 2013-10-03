@@ -1,0 +1,13 @@
+<div class="conclusion-row">
+	<label>{{lang['conclusion_' + type]}}</label>
+	<a href="" ng-bind-html="conclusionText()" class="conclusion-trigger"></a>
+</div>
+<div class="conclusion-row extended-only" ng-show="conclusion.justification">
+	<label><%- i18n('reason') %></label>
+	<div>{{conclusion.justification}}</div>
+</div>
+<div class="conclusion-row extended-only">
+	<label><%- i18n('modified') %> | <a href=""><%- i18n('history') %></a></label>
+	<div>{{conclusion.contributor.date}}<%- i18n('by') %></div>
+</div>
+<a href="" class="add-link fs-icon-add" ng-show="!conclusion"><%- i18n('addLink') %></a>
