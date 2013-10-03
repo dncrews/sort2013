@@ -4,14 +4,8 @@ ancestorApp.directive('fsFamilyMembers', function() {
 		template: 
 '<div class="family-box">\
 	<ul class="couple-box unstyled">\
-		<li class="fs-icon-male person">\
-			<a href="" ng-class="{focused: person.id == family.husband.id}">{{family.husband.name}}</a>\
-			<label>{{family.husband.lifeSpan}} • {{family.husband.id}}</label>\
-		</li>\
-		<li class="fs-icon-female person">\
-			<a href="" ng-class="{focused: person.id == family.wife.id}">{{family.wife.name}}</a>\
-			<label>{{family.wife.lifeSpan}} • {{family.wife.id}}</label>\
-		</li>\
+		<li fs-person data-person="family.husband" data-root="person"></li>\
+		<li fs-person data-person="family.wife" data-root="person"></li>\
 		<li class="married person">\
 			<label>{{lang.family_married}}</label>\
 			<label>{{family.event.standardDate||family.event.originalDate}}</label>\
@@ -27,10 +21,7 @@ ancestorApp.directive('fsFamilyMembers', function() {
 	<div class="children-list" ng-init="family.showChildren = family.current" ng-class="{expanded:family.showChildren}">\
 		<a href="javascript:void(0)" class="children-toggle" ng-click="family.showChildren = !family.showChildren">{{lang.family_children}} ({{family.children.length}})</a>\
 		<ul class="unstyled">\
-			<li ng-repeat="child in family.children" class="person fs-icon-{{child.gender|lowercase}}">\
-				<a href="" ng-class="{focused: person.id == child.id}">{{child.name}}</a>\
-				<label>{{child.lifeSpan}} • {{child.id}}</label>\
-			</li>\
+			<li fs-person data-person="child" data-root="person" ng-repeat="child in family.children" ></li>\
 		</ul>\
 	</div>\
 </div>',

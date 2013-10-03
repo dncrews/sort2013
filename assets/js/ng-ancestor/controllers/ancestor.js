@@ -1,4 +1,4 @@
-ancestorApp.controller('ancestorController', ['$scope', 'personService', function($scope, personService) {
+ancestorApp.controller('ancestorController', ['$rootScope', '$scope', 'personService', function($rootScope, $scope, personService) {
 	$scope.loading = true;
 
 	$scope.photoUrlCss = function() {
@@ -13,21 +13,21 @@ ancestorApp.controller('ancestorController', ['$scope', 'personService', functio
 
 	personService.getData(function(data) {
 		$scope.loading = false;
-		$scope.person = data;
+		$rootScope.person = data;
 	});
 
 	window.doNameChange = function(name) {
 		var date = new Date();
 
-		$scope.person.nameConclusion.details.fullText = name;
-		$scope.person.name = name;
-		$scope.person.changes.unshift({
+		$rootScope.person.nameConclusion.details.fullText = name;
+		$rootScope.person.name = name;
+		$rootScope.person.changes.unshift({
 			type: "EDIT_PREFERRED_NAME",
 			timeStampDisplay: date.getDate() + ' October 2013',
 			contributor: {
 				name: 'Mark Gardner'
 			}
 		});
-		$scope.$apply();
+		$rootScope.$apply();
 	}
 }]);

@@ -5,4 +5,137 @@
 	top: 121px;
 	bottom: 0;
 	background: #ECEBEA;
+	overflow: hidden;
+}
+
+.pedigree-container .pedigree-offset {
+	position: absolute;
+	top: 50%;
+	left: 60px;
+}
+
+.pedigree-container label,
+.pedigree-container a {
+	margin: 0;
+	min-height: 20px;
+	display: block;
+	width: 220px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.pedigree-container .bowtie-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.pedigree-container .bowtie-container > ul {
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 0 9px 0 #99938D;
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	padding: 3px 5px;
+}
+
+.pedigree-container .bowtie-container > ul > li {
+	padding-left: 30px;
+	background-position: 2px center;
+}
+
+.pedigree-container .bowtie-container > ul > li.empty label {
+	visibility: hidden;
+}
+
+.pedigree-container .primary {
+	top: -43px;
+	left: 0;
+	box-shadow: 0 0 9px 0 #06ABE0;
+}
+
+.pedigree-container .husband-parents {
+	bottom: 120px;
+	left: 300px;
+}
+
+.pedigree-container .wife-parents {
+	top: 120px;
+	left: 300px;
+}
+
+.pedigree-container .husband-father-parents {
+	bottom: 225px;
+	left: 400px;
+}
+
+.pedigree-container .husband-mother-parents {
+	bottom: 15px;
+	left: 400px;
+}
+
+.pedigree-container .wife-father-parents {
+	top: 15px;
+	left: 400px;
+}
+
+.pedigree-container .wife-mother-parents {
+	top: 225px;
+	left: 400px;
+}
+
+.pedigree-container .primary:before,
+.pedigree-container .primary:after,
+.pedigree-container .husband-parents:before,
+.pedigree-container .husband-parents:after,
+.pedigree-container .wife-parents:before,
+.pedigree-container .wife-parents:after {
+	content: '';
+	display: block;
+	position: absolute;
+	border: 1px solid #000;
+	width: 100px;
+	height: 119px;
+}
+
+.pedigree-container .primary:before {
+	left: 199px;
+	bottom: 86px;
+	border-width: 1px 0 0 1px;
+}
+
+.pedigree-container .primary:after {
+	left: 199px;
+	top: 86px;
+	border-width: 0 0 1px 1px;
+}
+
+.pedigree-container .husband-parents:before {
+	left: 50px;
+	bottom: 86px;
+	height: 62px;
+	border-width: 1px 0 0 1px;
+}
+
+.pedigree-container .husband-parents:after {
+	left: 50px;
+	top: 86px;
+	height: 62px;
+	border-width: 0 0 1px 1px;
+}
+
+.pedigree-container .wife-parents:before {
+	left: 50px;
+	top: -63px;
+	height: 62px;
+	border-width: 1px 0 0 1px;
+}
+
+.pedigree-container .wife-parents:after {
+	left: 50px;
+	bottom: -63px;
+	height: 62px;
+	border-width: 0 0 1px 1px;
 }

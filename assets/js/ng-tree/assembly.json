@@ -2,6 +2,7 @@
 	"files": [
 		"app.js",
 		"controllers/subnavController.js",
+		"directives/person.js",
 		"directives/roundedSection.js"
 	],
 	"simpleWrap": true
