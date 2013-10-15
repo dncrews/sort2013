@@ -1,13 +1,53 @@
-<div class="conclusion-row">
+<div class="conclusion-row conclusion-info">
 	<label>{{lang['conclusion_' + type]}}</label>
 	<a href="" ng-bind-html="conclusionText()" class="conclusion-trigger"></a>
 </div>
-<div class="conclusion-row extended-only" ng-show="conclusion.justification">
+<div class="conclusion-row extended-only conclusion-info" ng-show="conclusion.justification">
 	<label><%- i18n('reason') %></label>
 	<div>{{conclusion.justification}}</div>
 </div>
-<div class="conclusion-row extended-only">
-	<label><%- i18n('modified') %> | <a href=""><%- i18n('history') %></a></label>
-	<div>{{conclusion.contributor.date}}<%- i18n('by') %></div>
+<div class="conclusion-row editing-only conclusion-edits row-fluid">
+	<div class="control-group span2">
+		<label class="control-label" for="inputTitle">Title</label>
+		<div class="controls">
+			<input type="text" id="inputTitle" placeholder="Title" class="span12" ng-model="editing.title">
+		</div>
+	</div>
+	<div class="control-group span4">
+		<label class="control-label" for="inputFirstNames">First Names</label>
+		<div class="controls">
+			<input type="text" id="inputFirstNames" placeholder="First Names" class="span12" ng-model="editing.firstNames">
+		</div>
+	</div>
+	<div class="control-group span4">
+		<label class="control-label" for="inputLastName">Last Name</label>
+		<div class="controls">
+			<input type="text" id="inputLastName" placeholder="Last Name" class="span12" ng-model="editing.lastName">
+		</div>
+	</div>
+	<div class="control-group span2">
+		<label class="control-label" for="inputSuffix">Suffix</label>
+		<div class="controls">
+			<input type="text" id="inputSuffix" placeholder="Suffix" class="span12" ng-model="editing.suffix">
+		</div>
+	</div>
 </div>
+<div class="conclusion-row editing-only">
+	<label>Reason this information is correct</label>
+	<textarea name="justification" placeholder="Explain why you feel this information is correct." ng-mode="editing.justification"></textarea>
+</div>
+<div class="conclusion-row extended-only">
+	<label><%- i18n('modified') %><span class="conclusion-info"> | <a href=""><%- i18n('history') %></a></span></label>
+	<div>{{conclusion.contributor.date}}<%- i18n('by') %>{{conclusion.contributor.name}}</div>
+</div>
+<div class="conclusion-row editing-only">
+	<a href="" class="btn btn-primary">Save</a>
+	<a href="" class="btn btn-link btn-cancel">Cancel</a>
+</div>
+
 <a href="" class="add-link fs-icon-add" ng-show="!conclusion"><%- i18n('addLink') %></a>
+<div class="extended-only conclusion-menu">
+	<a href="" class="conclusion-edit">Edit</a>
+	|
+	<a href="" class="fs-icon-close conclusion-trigger">Close</a>
+</div>

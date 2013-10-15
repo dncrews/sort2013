@@ -11,6 +11,10 @@ treeApp.directive('fsPerson', function() {
 		link: function(scope, element, attrs) {
 			// Add person card trigger
 			scope.calcLabel = function(person) {
+				if(!person) {
+					return '';
+				}
+
 				if(person.lifeSpan && person.id) {
 					return person.lifeSpan + ' • ' + person.id;
 				} else if(person.lifeSpan) {
