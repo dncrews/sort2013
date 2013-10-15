@@ -15,20 +15,4 @@ ancestorApp.controller('ancestorController', ['$rootScope', '$scope', 'personSer
 		$scope.loading = false;
 		$rootScope.person = data;
 	});
-
-	// Simple modify function for showing bindings.
-	window.doNameChange = function(name) {
-		var date = new Date();
-
-		$rootScope.person.nameConclusion.details.fullText = name;
-		$rootScope.person.name = name;
-		$rootScope.person.changes.unshift({
-			type: "EDIT_PREFERRED_NAME",
-			timeStampDisplay: date.getDate() + ' October 2013',
-			contributor: {
-				name: 'Mark Gardner'
-			}
-		});
-		$rootScope.$apply();
-	}
 }]);
