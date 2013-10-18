@@ -73,7 +73,7 @@ ancestorApp.directive('fsConclusion', ['$rootScope', function($rootScope) {
 				element.removeClass('editing');
 
 				// This is a temporary hack.
-				$rootScope.$apply(function() {
+				scope.$apply(function() {
 					var date = new Date();
 					
 					// Real change
