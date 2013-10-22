@@ -45,5 +45,6 @@
 	"section_ordinances": "Temple Ordinances",
 	"living_sources": "Sources are not available for living people.",
 	"living_discussions": "Discussions are not available for living people.",
-	"living_lifesketch": "Life Sketch is unavailable for living people."
+	"living_lifesketch": "Life Sketch is unavailable for living people.",
+	"living_changes": "The change history is unavailable for living people."
 }

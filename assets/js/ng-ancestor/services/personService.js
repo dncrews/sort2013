@@ -185,6 +185,16 @@ ancestorApp.factory('personService', ['$http', function($http) {
 
 				cb(err, data);
 			});
+		},
+
+		getChangeSummary: function(id, cb) {
+			var promise = $http.get('/tree-data/changes/person/' + id + '/summary', {
+				params: makeParams()
+			});
+
+			handleResponse(promise, function(err, data) {
+				cb(err, data && data.changes);
+			});
 		}
 	}
 }]);

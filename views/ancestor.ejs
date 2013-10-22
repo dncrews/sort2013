@@ -127,6 +127,7 @@
 			</div>
 			<div class="box" data-title="<%- i18n('side_changes') %>">
 				<ul class="unstyled change-log" ng-controller="changelogController">
+					<li ng-show="person.isLiving"><label><%- i18n('living_changes') %></label></li>
 					<li class="fs-icon-change" ng-repeat="change in person.changes | limitTo: 3">
 						<p>{{getTitle(change)}}</p>
 						<label>{{change.timeStampDisplay}}</label>

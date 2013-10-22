@@ -14,7 +14,7 @@ ancestorApp.controller('ancestorController', ['$rootScope', '$scope', 'personSer
 	function initData() {
 		var person = dataParts.person;
 
-		$scope.loading = ++dataCount < 7;
+		$scope.loading = ++dataCount < 8;
 		$rootScope.person = person;
 
 		if(!person) {
@@ -27,6 +27,7 @@ ancestorApp.controller('ancestorController', ['$rootScope', '$scope', 'personSer
 		person.sources = dataParts.sources;
 		person.notes = dataParts.notes;
 		person.ordinances = dataParts.ordinances;
+		person.changes = dataParts.changes;
 	}
 
 	function setData(prop, errMessage) {
@@ -41,7 +42,7 @@ ancestorApp.controller('ancestorController', ['$rootScope', '$scope', 'personSer
 	}
 
 	function downloadData() {
-		// Dont load data unless we are on the ancestor page and person does not match the personid
+		// Dont load data unless we are on the ancestor page and person does not match the personId
 		if($scope.pagename === 'ancestor' && (!$scope.person || $scope.person.id !== $scope.personId)) {
 			$scope.loading = true;
 
@@ -55,6 +56,7 @@ ancestorApp.controller('ancestorController', ['$rootScope', '$scope', 'personSer
 			personService.getSources($scope.personId, setData('sources', lang.errorLoadingSources));
 			personService.getNotes($scope.personId, setData('notes', lang.errorLoadingNotes));
 			personService.getOrdinances($scope.personId, $scope.cpUserId, setData('ordinances', lang.errorLoadingOrdinances));
+			personService.getChangeSummary($scope.personId, setData('changes', lang.errorLoadingChanges));
 		}
 	}
 
