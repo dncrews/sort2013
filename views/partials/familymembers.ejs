@@ -14,7 +14,7 @@
 			<a href="" class="pull-right"><%- i18n('edit_couple') %></a>
 		</li>
 	</ul>
-	<div class="children-list" ng-init="family.showChildren = family.current" ng-class="{expanded:family.showChildren}">
+	<div class="children-list" ng-class="{expanded:family.showChildren}">
 		<a href="javascript:void(0)" class="children-toggle" ng-click="family.showChildren = !family.showChildren"><%- i18n('children') %>{{family.children ? ' (' + family.children.length + ')' : ''}}</a>
 		<ul class="unstyled">
 			<li fs-person data-person="child" data-root="person" ng-repeat="child in family.children" ></li>

@@ -33,7 +33,21 @@ ancestorApp.factory('personService', ['$http', function($http) {
 				params: makeParams()
 			});
 
-			handleResponse(promise, cb);
+			handleResponse(promise, function(err, person) {
+				var lastConclusionType, item;
+
+				if(person) {
+					// Hide the same tiles on other conclusions
+					for(var i = 0; i < person.otherConclusions.length; i++) {
+						item = person.otherConclusions[i];
+
+						item.hideTitle = item.type === lastConclusionType;
+						lastConclusionType = item.type;
+					}
+				}
+
+				cb(err, person);
+			});
 		},
 
 		getFamilyMembers: function(id, cb) {
@@ -41,7 +55,15 @@ ancestorApp.factory('personService', ['$http', function($http) {
 				params: makeParams()
 			});
 
-			handleResponse(promise, cb);
+			handleResponse(promise, function(err, families) {
+				for(var i = 0; i < families.parents.length; i++) {
+					families.parents[i].showChildren = families.parents[i].current;
+				}
+				for(var i = 0; i < families.spouses.length; i++) {
+					families.spouses[i].showChildren = families.spouses[i].current;
+				}
+				cb(err, families);
+			});
 		},
 
 		getNotes: function(id, cb) {
