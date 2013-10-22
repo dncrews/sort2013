@@ -81,7 +81,7 @@
 			<section fs-rounded-section data-title="<%- i18n('section_sources') %>">
 				<label ng-show="person.isLiving"><%- i18n('living_sources') %></label>
 				<ul class="unstyled source-lists">
-					<li ng-repeat="source in person.sources" class="fs-icon-website">
+					<li ng-repeat="source in person.sources" ng-class="{'fs-icon-website': source.sourceType === 'DEFAULT', 'fs-icon-logo': source.sourceType === 'FSREADONLY' }">
 						<a href="">{{source.title}}</a>
 					</li>
 				</ul>
