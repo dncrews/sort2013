@@ -1,6 +1,6 @@
 <% page = { title : 'Sort Presentation', key: 'sort_tree' } %>
 <% assets = { css : ['ng-pedigree.css','ng-ancestor.css','ng-tree.css','fs-icon-svg.css'], js: ['angular-1.2.0.js','angular-1.2.0-route.js','angular-1.2.0-sanitize.js','ng-pedigree.js','ng-ancestor.js','ng-tree.js'] } %>
-<div id="main" ng-app="tree">
+<div id="main" ng-app="tree" ng-init="defaultPersonId = '<%- userInfo.personId %>'; cpUserId = '<%- userInfo.cpUserId %>'">
 	<div class="sub-nav">
 		<ul class="unstyled clearfix" ng-controller="subnavController">
 			<li ng-repeat="page in pages" ng-class="{'has-goto':page.hasHistory, active: isActive(page)}">
@@ -30,5 +30,8 @@
 	</script>
 	<script type="text/ng-template" id="partials/roundedsection">
 <%- partial('partials/roundedsection') %>
+	</script>
+	<script type="text/ng-template" id="partials/ordinance">
+<%- partial('partials/ordinance') %>
 	</script>
 </div>

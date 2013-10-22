@@ -1,7 +1,7 @@
 <div class="family-box">
 	<ul class="couple-box unstyled">
-		<li fs-person data-person="family.husband" data-root="person"></li>
-		<li fs-person data-person="family.wife" data-root="person"></li>
+		<li fs-person data-person="family.husband" data-root="person" data-gender="male" data-addlink="Add or Find Spouse"></li>
+		<li fs-person data-person="family.wife" data-root="person" data-gender="female" data-addlink="Add or Find Spouse"></li>
 		<li class="married person">
 			<label><%- i18n('married') %></label>
 			<label>{{family.event.standardDate||family.event.originalDate}}</label>
@@ -15,9 +15,12 @@
 		</li>
 	</ul>
 	<div class="children-list" ng-init="family.showChildren = family.current" ng-class="{expanded:family.showChildren}">
-		<a href="javascript:void(0)" class="children-toggle" ng-click="family.showChildren = !family.showChildren"><%- i18n('children') %> ({{family.children.length}})</a>
+		<a href="javascript:void(0)" class="children-toggle" ng-click="family.showChildren = !family.showChildren"><%- i18n('children') %>{{family.children ? ' (' + family.children.length + ')' : ''}}</a>
 		<ul class="unstyled">
 			<li fs-person data-person="child" data-root="person" ng-repeat="child in family.children" ></li>
+			<li class="data-actions">
+				<a href="" class="fs-icon-add"><%- i18n('add_child') %></a>
+			</li>
 		</ul>
 	</div>
 </div>

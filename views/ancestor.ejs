@@ -19,30 +19,101 @@
 		</nav>
 	</header>
 	<section data-section-id="details" class="clearfix">
+		<div class="jump-links">
+			<a href=""><%- i18n('jump_vitals') %></a>
+			<span>|</span>
+			<a href=""><%- i18n('jump_other') %></a>
+			<span>|</span>
+			<a href=""><%- i18n('jump_family') %></a>
+			<span>|</span>
+			<a href="" data-count="{{person.sources.length}}"><%- i18n('jump_sources') %></a>
+			<span>|</span>
+			<a href="" data-count="{{person.discussions.length}}"><%- i18n('jump_discussions') %></a>
+			<span>|</span>
+			<a href="" data-count="{{person.ordinances.available}}"><%- i18n('jump_ordinances') %></a>
+		</div>
 		<article class="pull-left">
-			<div class="content">
-				<section fs-rounded-section data-title="<%- i18n('section_vital') %>">
-					<div fs-conclusion data-conclusion="person.nameConclusion" data-type="NAME"></div>
-					<div fs-conclusion data-conclusion="person.genderConclusion" data-type="GENDER"></div>
-					<div fs-conclusion data-conclusion="person.birthConclusion" data-type="BIRTH"></div>
-					<div fs-conclusion data-conclusion="person.christeningConclusion" data-type="CHRISTENING"></div>
-					<div fs-conclusion data-conclusion="person.deathConclusion" data-type="DEATH"></div>
-					<div fs-conclusion data-conclusion="person.burialConclusion" data-type="BURIAL"></div>
-				</section>
-				<section fs-rounded-section data-title="<%- i18n('section_nonvital') %>">
-					<div fs-conclusion data-conclusion="conclusion" data-type="{{conclusion.type}}" ng-repeat="conclusion in person.otherConclusions"></div>
-				</section>
-				<section fs-rounded-section data-title="<%- i18n('section_family') %>">
-					<div class="family-column family-spouses" data-count="{{person.families.spouses.length}}">
-						<h4><%- i18n('section_family_spouses') %></h4>
-						<div fs-family-members data-family="family" ng-repeat="family in person.families.spouses"></div>
+			<section fs-rounded-section data-title="<%- i18n('section_lifesketch') %>">
+				<label ng-show="person.isLiving"><%- i18n('living_lifesketch') %></label>
+				<div>{{person.lifeSketch.details.text}}</div>
+			</section>
+			<section fs-rounded-section data-title="<%- i18n('section_vital') %>" class="has-actions">
+				<div class="data-actions">
+					<a href=""><%- i18n('open_details') %></a>
+				</div>
+				<div fs-conclusion="person.nameConclusion" data-type="NAME"></div>
+				<div fs-conclusion="person.genderConclusion" data-type="GENDER"></div>
+				<div fs-conclusion="person.birthConclusion" data-type="BIRTH"></div>
+				<div fs-conclusion="person.christeningConclusion" data-type="CHRISTENING"></div>
+				<div fs-conclusion="person.deathConclusion" data-type="DEATH"></div>
+				<div fs-conclusion="person.burialConclusion" data-type="BURIAL"></div>
+			</section>
+			<section fs-rounded-section data-title="<%- i18n('section_nonvital') %>" class="has-actions">
+				<div class="data-actions">
+					<a href=""><%- i18n('open_details') %></a>
+					<span>|</span>
+					<a href="" class="fs-icon-add"><%- i18n('add') %></a>
+				</div>
+				<div fs-conclusion="conclusion" data-type="{{conclusion.type}}" ng-repeat="conclusion in person.otherConclusions"></div>
+			</section>
+			<section fs-rounded-section data-title="<%- i18n('section_family') %>">
+				<div class="family-column family-spouses" data-count="{{person.families.spouses.length}}">
+					<h4><%- i18n('section_family_spouses') %></h4>
+					<div class="data-actions">
+						<a href=""><%- i18n('hide_all') %></a>
+						<span>|</span>
+						<a href="" class="fs-icon-add"><%- i18n('add_spouse') %></a>
 					</div>
-					<div class="family-column family-parents" data-count="{{person.families.parents.length}}">
-						<h4><%- i18n('section_family_parents') %></h4>
-						<div fs-family-members data-family="family" ng-repeat="family in person.families.parents"></div>
+					<div fs-family-members data-family="family" ng-repeat="family in person.families.spouses"></div>
+					<a href="" ng-show="person.gender === 'MALE'" class="fs-icon-add"><%- i18n('add_child_unknown_mother') %></a>
+					<a href="" ng-show="person.gender === 'FEMALE'" class="fs-icon-add"><%- i18n('add_child_unknown_father') %></a>
+				</div>
+				<div class="family-column family-parents" data-count="{{person.families.parents.length}}">
+					<h4><%- i18n('section_family_parents') %></h4>
+					<div class="data-actions">
+						<a href=""><%- i18n('hide_all') %></a>
+						<span>|</span>
+						<a href="" class="fs-icon-add"><%- i18n('add_parent') %></a>
 					</div>
-				</section>
-			</div>
+					<div fs-family-members data-family="family" ng-repeat="family in person.families.parents"></div>
+				</div>
+			</section>
+			<section fs-rounded-section data-title="<%- i18n('section_sources') %>">
+				<label ng-show="person.isLiving"><%- i18n('living_sources') %></label>
+				<ul class="unstyled source-lists">
+					<li ng-repeat="source in person.sources" class="fs-icon-website">
+						<a href="">{{source.title}}</a>
+					</li>
+				</ul>
+			</section>
+			<section fs-rounded-section data-title="<%- i18n('section_discussions') %>">
+				<label ng-show="person.isLiving"><%- i18n('living_discussions') %></label>
+				<ul class="unstyled discussion-lists">
+					<li ng-repeat="discussion in person.discussions" class="fs-icon-comment">
+						<a href="">{{discussion.title}}</a>
+					</li>
+				</ul>
+			</section>
+			<section fs-rounded-section data-title="<%- i18n('section_notes') %>">
+				<div class="data-actions">
+					<a href=""><%- i18n('open_details') %></a>
+					<span>|</span>
+					<a href="" class="fs-icon-add"><%- i18n('add_note') %></a>
+				</div>
+				<ul class="unstyled note-lists">
+					<li ng-repeat="note in person.notes" class="fs-icon-note-small">
+						<a href="">{{note.title}}</a>
+					</li>
+				</ul>
+			</section>
+			<section fs-rounded-section data-title="<%- i18n('section_ordinances') %>">
+				<div fs-ordinance="person.ordinances.baptism"></div>
+				<div fs-ordinance="person.ordinances.confirmation"></div>
+				<div fs-ordinance="person.ordinances.initiatory"></div>
+				<div fs-ordinance="person.ordinances.endowment"></div>
+				<div fs-ordinance="person.ordinances.sealingsToParents"></div>
+				<div fs-ordinance="person.ordinances.sealingsToSpouses"></div>
+			</section>
 		</article>
 		<aside class="pull-right">
 			<div class="box" data-title="<%- i18n('side_print') %>">

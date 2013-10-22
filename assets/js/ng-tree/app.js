@@ -9,14 +9,10 @@ treeApp.filter('html', function () {
 treeApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 		.when('/tree/:personId?/:spouseId?', {
-			//templateUrl: '/views/tree', 
-			//controller: 'pedigreeController',
 			page: 'tree',
 			pageType: 'full'
 		})
 		.when('/ancestor/:personId?/:spouseId?', {
-			//templateUrl: '/views/ancestor', 
-			//controller: 'ancestorController',
 			page: 'ancestor'
 		})
 		.otherwise({redirectTo: '/tree'});
@@ -33,6 +29,8 @@ treeApp.run(['$rootScope', '$route', function($rootScope, $route) {
 
 		if(current) {
 			$rootScope.pagename = current.page;
+			$rootScope.personId = route.params.personId || $rootScope.defaultPersonId;
+			$rootScope.spouseId = route.params.spouseId;
 
 			// Breaking angular rule of placing dom manipulation in a app but due
 			// to not having control over the layout.ejs we will have to place a small snippet here.

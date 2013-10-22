@@ -1,5 +1,5 @@
-<li class="fs-icon-{{(person.gender||gender)|lowercase}} person" ng-class="{empty: !person}">
+<li class="{{calcClass(person)}} person">
 	<a href="" ng-class="{focused: person.id == root.id}" ng-show="person">{{person.name}}</a>
-	<a href="" ng-hide="person">{{addlink}}</a>
+	<a href="" ng-show="!person || person.id === 'UNKNOWN'">{{addlink}}</a>
 	<label>{{calcLabel(person)}}</label>
 </li>

@@ -1,5 +1,5 @@
 <div class="conclusion-row conclusion-info">
-	<label>{{lang['conclusion_' + type]}}</label>
+	<label ng-hide="conclusion.hideTitle">{{lang['conclusion_' + type]}}</label>
 	<a href="" ng-bind-html="conclusionText()" class="conclusion-trigger"></a>
 </div>
 <div class="conclusion-row extended-only conclusion-info" ng-show="conclusion.justification">

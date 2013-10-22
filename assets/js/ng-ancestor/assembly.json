@@ -5,7 +5,8 @@
 		"controllers/changelog.js",
 		"services/personService.js",
 		"directives/conclusion.js",
-		"directives/familymembers.js"
+		"directives/familymembers.js",
+		"directives/ordinance.js"
 	],
 	"simpleWrap": true
 }

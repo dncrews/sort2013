@@ -1,4 +1,32 @@
 {
   "experiments": {
+  	"clientMetricsExperiment": false,
+	"deleteImpedanceExperiment": true,
+	"deleteRelationshipExperiment": false,
+	"fromToEx": false,
+	"lSChangeLogEx": true,
+	"lifesketchExperiment": true,
+	"mergeImprovementsExperiment": true,
+	"mergeLifeSketchEx": true,
+	"noEmptySpouseLineExperiment": true,
+	"notesChangeLogExperiment": true,
+	"notesExperiment": true,
+	"ordinanceChangeLogExperiment": false,
+	"ossEx": true,
+	"pDupCountsEx": true,
+	"platformPedigreeExperiment": false,
+	"platformPersonExperiment": false,
+	"portPedCannedPixTestEx": false,
+	"portPedPixTestEx": false,
+	"preferredFamilyExperiment": true,
+	"printFGRWithoutSources": true,
+	"printFanChartExperiment": true,
+	"relsInDupCheckEx": false,
+	"reportAbuseLinkExperiment": true,
+	"searchURLEx": false,
+	"showAllPersonOrdinancesExperiment": false,
+	"supportSalesforceEx": false,
+	"vietnameseNameTemplateExperiment": false,
+	"watchChangeLogEx": false
   }
 }

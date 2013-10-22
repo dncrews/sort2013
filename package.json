@@ -7,7 +7,17 @@
     "shared-ui": "git+https://github.com/fs-webdev/shared-ui.git",
     "frontier-build-tools": "git+https://github.com/fs-webdev/frontier-build-tools.git",
     "woodruff": "git+https://github.com/fs-webdev/woodruff.git",
-    "startup": "~0.1.12"
+    "startup": "~0.1.12",
+    "simple-http-proxy": "~0.5.6"
+  },
+  "devDependencies": {
+    "mocha": "1.4.1",
+    "should": "1.1.0",
+    "sinon": "1.4.2",
+    "karma": "0.10.2",
+    "karma-mocha": "0.1.0",
+    "karma-chrome-launcher": "0.1.0",
+    "karma-phantomjs-launcher": "0.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

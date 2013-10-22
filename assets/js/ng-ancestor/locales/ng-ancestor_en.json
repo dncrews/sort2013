@@ -11,8 +11,15 @@
 	"conclusion_OTHER_EVENT": "Custom Event",
 	"conclusion_ALT_AKA": "Also Known As",
 	"conclusion_ALT_BIRTH": "Birth Name",
+	"conclusion_ALT_MARRIED": "Married Name",
 	"change_type_ADD_COUPLE_EVENT": "Couple Event Added",
 	"change_type_ADD_PERSON_SOURCE_REFERENCE": "Source Attached",
 	"change_type_EDIT_PERSON_SOURCE_REFERENCE_TAG": "Source Tagged",
-	"change_type_EDIT_PREFERRED_NAME": "Name Changed"
+	"change_type_EDIT_PREFERRED_NAME": "Name Changed",
+	"ordinance_Baptism": "Baptism",
+	"ordinance_Confirmation": "Confirmation",
+	"ordinance_Initiatory": "Initiatory",
+	"ordinance_Endowment": "Endowment",
+	"ordinance_SealingToParents": "Sealing to Parents",
+	"ordinance_SealingToSpouse": "Sealing to Spouse"
 }

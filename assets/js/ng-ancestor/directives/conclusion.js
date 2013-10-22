@@ -40,7 +40,7 @@ ancestorApp.directive('fsConclusion', ['$rootScope', function($rootScope) {
 
 	return {
 		scope: {
-			conclusion: '=',
+			conclusion: '=fsConclusion',
 			type: '@'
 		},
 		templateUrl: 'partials/conclusion',

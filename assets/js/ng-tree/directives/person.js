@@ -9,9 +9,17 @@ treeApp.directive('fsPerson', function() {
 		},
 		templateUrl: 'partials/person',
 		link: function(scope, element, attrs) {
+			scope.calcClass = function(person) {
+				if(!person || person.id === 'UNKNOWN') {
+					return 'empty fs-icon-' + this.gender;
+				} else {
+					return 'fs-icon-' + person.gender.toLowerCase();
+				}
+			}
+
 			// Add person card trigger
 			scope.calcLabel = function(person) {
-				if(!person) {
+				if(!person || person.id === 'UNKNOWN') {
 					return '';
 				}
 

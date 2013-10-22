@@ -117,6 +117,37 @@
 	border-color: #fff;
 }
 
+[data-page="ancestor"] .jump-links {
+	padding: 15px 15px 0;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+[data-page="ancestor"] .jump-links a {
+	color: #333331;
+}
+
+[data-page="ancestor"] .jump-links a[data-count]:after {
+	content: attr(data-count);
+	display: inline-block;
+	background: #fff;
+	font-size: 14px;
+	line-height: 15px;
+	padding: 1px 8px;
+	color: #333331;
+	vertical-align: text-top;
+	margin-left: 4px;
+	border-radius: 9px;
+}
+
+[data-page="ancestor"] .jump-links a[data-count=""]:after {
+	display: none;
+}
+
+[data-page="ancestor"] .jump-links span {
+	margin: 0 10px;
+}
+
 [data-page="ancestor"] article {
 	padding-bottom: 15px;
 }
@@ -126,15 +157,12 @@
 	border: 1px solid transparent;
 	margin: 4px 0;
 	padding: 12px 20px 0;
+	line-height: 18px
 }
 
 [fs-conclusion] label {
 	margin: 0;
 	line-height: 16px;
-}
-
-[fs-conclusion] .add-link {
-	padding-left: 20px;
 }
 
 [fs-conclusion] .conclusion-row {
@@ -230,7 +258,7 @@
 }
 
 .family-box li.person {
-	padding: 4px 0 4px 25px;
+	padding: 4px 0 4px 30px;
 	background-position: 0 11px;
 }
 
@@ -243,6 +271,7 @@
 }
 
 .family-box .person label {
+	height: 16px;
 	line-height: 16px;
 	margin: 0;
 	white-space: nowrap;
@@ -300,6 +329,10 @@
 	display: block;
 }
 
+.family-box .children-list .data-actions {
+	padding-top: 5px;
+}
+
 .family-box .children-toggle {
 	display: block;
 	font-size: 14px;
@@ -330,6 +363,11 @@
 	font-weight: bold;
 }
 
+.family-column > .fs-icon-add {
+	margin-left: 10px;
+	font-size: 14px;
+}
+
 .change-log,
 .change-log p,
 .change-log label {
@@ -340,4 +378,35 @@
 	padding-left: 35px;
 	margin: 10px 0 0 5px;
 	background-position: 0 2px;
+}
+
+.ord-row {
+	padding: 11px 0 11px 17px;
+}
+
+.ord-info {
+	float: left;
+	width: 250px;
+}
+
+.ord-details {
+	float: left;
+}
+
+.ord-info label {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.ord-status {
+	margin-bottom: 4px;
+}
+
+.data-actions {
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+.data-actions span {
+	padding: 0 5px;
 }

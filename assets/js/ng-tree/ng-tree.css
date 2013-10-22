@@ -2,6 +2,10 @@ a, a:hover, a:active {
 	color: #0051c4;
 }
 
+.fs-icon-add {
+	padding-left: 20px;
+}
+
 .section-rounded {
 	width: 820px;
 	background: #fff;
@@ -30,6 +34,10 @@ a, a:hover, a:active {
 .section-rounded .section-content {
 	padding: 10px;
 	margin-top: -10px;
+}
+
+.section-rounded.has-actions .section-content {
+	padding-top: 0;
 }
 
 aside .box {
@@ -151,6 +159,76 @@ aside .box > a {
 
 [data-page-type="full"] footer {
 	display: none !important;
+}
+
+.ord-icon {
+	display: inline-block;
+	text-align: center;
+	width: 24px;
+	font-size: 14px;
+	line-height: 14px;
+	margin-left: 1px;
+	padding: 3px 0 3px 0;
+	color: #333331;
+}
+
+.ord-icon-needspermission,
+.ord-icon-ready {
+	background: #8CBAFC;
+	border: 1px solid #8CBAFC;
+}
+
+.ord-icon-inprogressnotprinted {
+	background: #FFE18B;
+	border: 1px solid #FFE18B;
+	color: #333331;
+}
+
+.ord-icon-inprogresswaiting {
+	background: #006B82;
+	border: 1px solid #006B82;
+	color: #fff;
+}
+
+.ord-icon-sharedinprogressnotprinted {
+	background: #FD6255;
+	border: 1px solid #FD6255;
+	color: #fff;
+}
+
+
+.ord-icon-inprogressprinted {
+	background: #5B8100;
+	border: 1px solid #5B8100;
+	color: #fff;
+}
+
+.ord-icon-sharedinprogressprinted {
+  background: #9A690C;
+  border: 1px solid #9A690C;
+  color: #fff;
+}
+
+
+.ord-icon-completed {
+  background: #CDCDCD;
+  border: 1px solid #CDCDCD;
+}
+
+.ord-icon-notneeded {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #999992;
+}
+
+.ord-icon-notready,
+.ord-icon-needsmoreinformation,
+.ord-icon-unavailable,
+.ord-icon-notavailable,
+.ord-icon-invalid {
+  background: #fff;
+  border: 1px dashed #666662;
+  color: #666662;
 }
 
 @media (min-width: 1200px) {
