@@ -6,7 +6,8 @@
 		"services/personService.js",
 		"directives/conclusion.js",
 		"directives/familymembers.js",
-		"directives/ordinance.js"
+		"directives/ordinance.js",
+		"directives/source.js"
 	],
 	"simpleWrap": true
 }

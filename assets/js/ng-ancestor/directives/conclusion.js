@@ -47,12 +47,14 @@ ancestorApp.directive('fsConclusion', ['$rootScope', function($rootScope) {
 		link: function(scope, element, attrs) {
 			scope.lang = lang;
 			scope.conclusionText = conclusionText;
+			
+			element.addClass('data-block');
 
-			angular.element('.conclusion-trigger', element).click(function() {
+			angular.element('.data-trigger', element).click(function() {
 				element.toggleClass('extended');
 			});
 
-			angular.element('.conclusion-edit', element).click(function() {
+			angular.element('.data-edit', element).click(function() {
 				element.addClass('editing');
 
 				// This is a temporary hack.

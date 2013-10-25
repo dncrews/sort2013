@@ -4,6 +4,8 @@
 	"hide_all": "Hide All",
 	"open_details": "Open Details",
 	"close_details": "Close Details",
+	"source_add": "Create a New Source",
+	"source_attach": "Attach from Source Box",
 	"jump_vitals": "Vitals",
 	"jump_other": "Other",
 	"jump_family": "Family",

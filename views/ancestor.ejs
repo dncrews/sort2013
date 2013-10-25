@@ -78,13 +78,16 @@
 					<div fs-family-members data-family="family" ng-repeat="family in person.families.parents"></div>
 				</div>
 			</section>
-			<section fs-rounded-section data-title="<%- i18n('section_sources') %>">
+			<section fs-rounded-section data-title="<%- i18n('section_sources') %>" class="has-actions source-list">
+				<div class="data-actions">
+					<a href=""><%- i18n('open_details') %></a>
+					<span>|</span>
+					<a href="" class="fs-icon-add"><%- i18n('source_add') %></a>
+					<span>|</span>
+					<a href="" class="fs-icon-add"><%- i18n('source_attach') %></a>
+				</div>
 				<label ng-show="person.isLiving"><%- i18n('living_sources') %></label>
-				<ul class="unstyled source-lists">
-					<li ng-repeat="source in person.sources" ng-class="{'fs-icon-website': source.sourceType === 'DEFAULT', 'fs-icon-logo': source.sourceType === 'FSREADONLY' }">
-						<a href="">{{source.title}}</a>
-					</li>
-				</ul>
+				<div fs-source="source" ng-repeat="source in person.sources"></div>
 			</section>
 			<section fs-rounded-section data-title="<%- i18n('section_discussions') %>">
 				<label ng-show="person.isLiving"><%- i18n('living_discussions') %></label>

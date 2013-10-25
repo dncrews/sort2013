@@ -161,6 +161,71 @@ aside .box > a {
 	display: none !important;
 }
 
+.data-block {
+	position: relative;
+	border: 1px solid transparent;
+	margin: 4px 0;
+	padding: 12px 20px 0;
+	line-height: 18px
+}
+
+.data-block label {
+	margin: 0;
+	line-height: 16px;
+}
+
+.data-block .data-row {
+	margin-top: 15px;
+}
+
+.data-block .data-row:first-child {
+	margin-top: 0;
+}
+
+.data-block.extended {
+	box-shadow: 0 0 10px #dedbd7;
+	border-color: #dedbd7;
+	border-radius: 3px;
+	padding-bottom: 12px;
+	margin-bottom: 10px;
+}
+
+.data-block.editing {
+	background-color: #f3f3f1;
+}
+
+.data-block .extended-only,
+.data-block .editing-only,
+.data-block.editing .data-info,
+.data-block.editing .extended-only.data-menu {
+	display: none;
+}
+
+.data-block.extended .extended-only,
+.data-block.editing .editing-only {
+	display: block;
+}
+
+.data-block .data-menu {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.data-block .data-menu .fs-icon-close {
+	background-position: center right;
+	padding-right: 22px;
+	line-height: 18px;
+	display: inline-block;
+}
+
+.data-block.editing textarea {
+	width: 98%;
+	height: 60px;
+}
+
 .ord-icon {
 	display: inline-block;
 	text-align: center;

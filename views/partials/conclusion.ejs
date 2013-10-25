@@ -1,12 +1,12 @@
-<div class="conclusion-row conclusion-info">
+<div class="data-row data-info">
 	<label ng-hide="conclusion.hideTitle">{{lang['conclusion_' + type]}}</label>
-	<a href="" ng-bind-html="conclusionText()" class="conclusion-trigger"></a>
+	<a href="" ng-bind-html="conclusionText()" class="data-trigger"></a>
 </div>
-<div class="conclusion-row extended-only conclusion-info" ng-show="conclusion.justification">
+<div class="data-row extended-only data-info" ng-show="conclusion.justification">
 	<label><%- i18n('reason') %></label>
 	<div>{{conclusion.justification}}</div>
 </div>
-<div class="conclusion-row editing-only conclusion-edits row-fluid">
+<div class="data-row editing-only data-edits row-fluid">
 	<div class="control-group span2">
 		<label class="control-label" for="inputTitle">Title</label>
 		<div class="controls">
@@ -32,22 +32,22 @@
 		</div>
 	</div>
 </div>
-<div class="conclusion-row editing-only">
+<div class="data-row editing-only">
 	<label>Reason this information is correct</label>
 	<textarea placeholder="Explain why you feel this information is correct." ng-model="editing.justification"></textarea>
 </div>
-<div class="conclusion-row extended-only">
-	<label><%- i18n('modified') %><span class="conclusion-info"> | <a href=""><%- i18n('history') %></a></span></label>
+<div class="data-row extended-only">
+	<label><%- i18n('modified') %><span class="data-info"> | <a href=""><%- i18n('history') %></a></span></label>
 	<div>{{conclusion.contributor.date}}<%- i18n('by') %>{{conclusion.contributor.name}}</div>
 </div>
-<div class="conclusion-row editing-only">
+<div class="data-row editing-only">
 	<a href="" class="btn btn-primary">Save</a>
 	<a href="" class="btn btn-link btn-cancel">Cancel</a>
 </div>
 
 <a href="" class="add-link fs-icon-add" ng-show="!conclusion"><%- i18n('addLink') %></a>
-<div class="extended-only conclusion-menu">
-	<a href="" class="conclusion-edit">Edit</a>
+<div class="extended-only data-menu">
+	<a href="" class="data-edit">Edit</a>
 	|
-	<a href="" class="fs-icon-close conclusion-trigger">Close</a>
+	<a href="" class="fs-icon-close data-trigger">Close</a>
 </div>
